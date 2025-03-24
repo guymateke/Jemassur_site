@@ -2360,3 +2360,97 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+/* CSS pour l'effet hover  */
+
+.card {
+  border: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 14px;
+}
+
+.card:hover .description {
+  opacity: 1;
+}
+
+i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover i {
+  transform: scale(1.1);
+}
+
+<!-- CSS Personnalisé -->
+<style>
+    /* Style général du Hero */
+    #hero {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        padding: 50px 20px;
+        height: 100vh;
+    }
+
+    /* Styles des boutons */
+    .hero-actions {
+        margin-top: 20px;
+    }
+
+    .hero-actions button {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+    .btn-secondary:hover {
+        background-color: #333;
+        transform: scale(1.05);
+    }
+
+    /* Bouton devis */
+    .btn-devis {
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #333;
+        padding: 12px 25px;
+        border-radius: 25px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .btn-devis:hover {
+        background-color: white;
+        transform: scale(1.1);
+    }
+
+    /* Effets d'animation */
+    .animate__animated {
+        animation-duration: 1s;
+    }

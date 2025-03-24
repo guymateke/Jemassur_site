@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Obtenir un Devis gratuit - Jemassur</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/icon.png" rel="icon">
+  <link href="assets/img/logoC.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+ 
+</head>
+
+<body class="contact-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logoC.png" alt="LOGO">
+
+            <h1 class="sitename">JEMASSUR</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+
+                <li><a href="about.html">Qui sommes-nous?</a></li>
+                
+                <li class="dropdown">
+                    <a href="blog.html">Blog</a>
+                    <ul class="submenu">
+                        <li>Plongez dans l'univers de JEMASSUR</li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="services.html">Nos Produits</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Particuliers</a>
+                            <ul class="submenu">
+                                <li><a href="">Assurance Santé</a></li>
+                                <li><a href="">Assurance Habitation</a></li>
+                                <li><a href="">Assurance Auto/Moto</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Professionnels</a>
+                            <ul class="submenu">
+                                <li><a href="">Assurance VTC/Taxi</a></li>
+                                <li><a href="">Assurance RC Pro</a></li>
+                                <li><a href="">Assurance Décennale</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="/contact.html" class="active">Contact</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+    </div>
+</header>
+<main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title light-background">
+    <div class="container">
+      <h1>Obtenir un Devis</h1>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="index.html">Accueil</a></li>
+          <li class="current">Obtenir un Devis</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
+
+  <!-- Devis Section -->
+  <section id="devis" class="devis section">
+
+    <div class="container" data-aos="fade">
+
+      <div class="row gy-5 gx-lg-5">
+
+        <div class="col-lg-4">
+          <div class="info">
+            <h3>DEVIS GRATUIT</h3>
+            <p>Remplissez le formulaire ci-dessous pour obtenir un devis personnalisé en fonction de votre besoin.</p>
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h4>Adresse:</h4>
+                <p>78 AVENUE DES CHAMPS ELYSEES BUREAU 326, 75008 PARIS, France</p>
+              </div>
+            </div>
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h4>Email:</h4>
+                <p>contact@jemassur.com</p>
+              </div>
+            </div>
+            <div class="info-item d-flex">
+              <i class="bi bi-phone flex-shrink-0"></i>
+              <div>
+                <h4>Téléphone:</h4>
+                <p>07 45 80 14 65</p>
+              </div>
+            </div>
+            <div class="info-image">
+              <img src="assets/img/imagedevis.jpg" alt="Demande de devis" class="img-fluid rounded shadow">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <form action="forms/devis.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom complet" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" required>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-6 form-group">
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Votre téléphone" required>
+              </div>
+              <div class="col-md-6 form-group">
+                <select class="form-control" name="type_assurance" id="type_assurance" required>
+                  <option value="">Choisissez votre type d'assurance</option>
+                  <option value="auto">Assurance Auto</option>
+                  <option value="moto">Assurance Moto</option>
+                  <option value="sante">Assurance Santé</option>
+                  <option value="habitation">Assurance Habitation</option>
+                  <option value="vtc">Assurance VTC</option>
+                  <option value="taxi">Assurance Taxi</option>
+                  <option value="rc_pro">RC Professionnelle</option>
+                  <option value="decennale">Assurance Décennale</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" placeholder="Détails supplémentaires" required></textarea>
+            </div>
+            <div class="form-group mt-3">
+              <label for="date">Date d'effet souhaitée</label>
+              <input type="date" class="form-control" name="date" id="date" required>
+            </div>
+            <div class="my-3">
+              <div class="loading">Chargement...</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Votre demande de devis a bien été envoyée. Merci!</div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-lg" style="background-color: #34bf49; color: #34bf49;">Demander un Devis</button>
+            </div>
+          </form>
+        </div><!-- End Devis Form -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Devis Section -->
+
+</main>
+
+
+  <footer id="footer" class="footer light-background"> 
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+                <div class="widget">
+                    <h3 class="widget-heading">À Propos</h3>
+                    <p class="mb-4">
+                        JEMASSUR est un expert en assurances Auto, Moto, Santé, VTC, Taxi, Décennale et RC Pro. Nous accompagnons les particuliers et les professionnels avec des solutions adaptées à leurs besoins.
+                    </p>
+                    <p class="mb-0">
+                        <a href="#" class="btn-learn-more">En savoir plus</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 ps-lg-5 mb-3 mb-md-0">
+                <div class="widget">
+                    <h3 class="widget-heading">Navigation</h3>
+                    <ul class="list-unstyled float-start me-5">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Qui sommes-nous ?</a></li>
+                        <li><a href="#">Nos services</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                    <ul class="list-unstyled float-start">
+                        <li><a href="#">Nos assurances</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 pl-lg-5">
+                <div class="widget">
+                    <h3 class="widget-heading">Nos Produits d'Assurances</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Assurance Auto/Moto</a></li>
+                        <li><a href="#">Assurance Santé</a></li>
+                        <li><a href="#">Assurance VTC/Taxi</a></li>
+                        <li><a href="#">Assurance RC Pro</a></li>
+                        <li><a href="#">Assurance Décennale</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 pl-lg-5">
+                <div class="widget">
+                    <h3 class="widget-heading">Nous suivre</h3>
+                    <ul class="list-unstyled social-icons light mb-3">
+                        <li><a href="#"><span class="bi bi-facebook"></span></a></li>
+                        <li><a href="#"><span class="bi bi-twitter-x"></span></a></li>
+                        <li><a href="#"><span class="bi bi-linkedin"></span></a></li>
+                        <li><a href="#"><span class="bi bi-instagram"></span></a></li>
+                        <li><a href="#"><span class="bi bi-youtube"></span></a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <div class="footer-subscribe">
+                        <h3 class="widget-heading">Abonnez-vous</h3>
+                        <form action="forms/newsletter.php" method="post" class="php-email-form">
+                            <div class="mb-2 d-flex">
+                                <input type="email" class="form-control me-2" name="email" placeholder="Entrez votre email" required>
+                                <button type="submit" class="btn btn-primary">
+                                    <span class="bi bi-arrow-right"></span>
+                                </button>
+                            </div>
+                            <div class="loading">Chargement...</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Votre abonnement a bien été pris en compte.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="mb-0">&copy; 2025 JEMASSUR. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
