@@ -1,2 +1,1 @@
-The .scss (Sass) files are only available in the pro version.
-You can buy it from: https://bootstrapmade.com/active-bootstrap-website-template/
+Site web de JEMASSUR compagnie d'assurance developpé par MATEKE GUILLAUME SERGE 
