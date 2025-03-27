@@ -61,20 +61,17 @@
 
 
 <body class="index-page">
-
     <header id="header" class="header d-flex align-items-center sticky-top"> 
-        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center">
-                <img src="assets/img/icon.png" alt="LOGO" style="width: 50px;height: 150px;border-radius: 5px;">
-                <h1 class="sitename"><strong>JEMASSUR</strong></h1>
+                <img src="assets/img/icon.png" alt="JEMASSUR" class="logo-img">
+                <h1 class="sitename">JEMASSUR</h1>
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="index.html" class="active">Accueil</a></li>
                     <li><a href="qui-sommes-nous.html">Qui sommes-nous?</a></li>
-                    <li class="dropdown">
-                        <a href="blog.html">Blog</a>
-                    </li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="services.html">Nos Produits</a></li>
                     <li><a href="mutuelle-senior.html">Mutuelle Senior</a></li>
                     <li><a href="/contact.html">Contact</a></li>
@@ -83,42 +80,126 @@
             </nav>
         </div>
     </header>
-    
-<!-- Hero Section with Swiper.js -->
-<section id="hero" class="hero">
-    <div class="swiper hero-slider">
-        <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide" style="background-image: url('assets/img/slide1\ \(1\).jpg');">
-             
-            </div>
 
-            <!-- Slide 2 -->
-            <div class="swiper-slide" style="background-image: url('assets/img/slide1\ \(4\).jpg');">
-                <div class="container text-center">
-                 <a href="obtenir-devis.html">   <button class="btn btn-light btn-devis"><i class="fa-solid fa-file-signature"></i> Demander un devis</button></a>
-                </div>
+    <!-- Section Hero -->
+    <section id="hero" class="d-flex">
+        <div class="floating-box">
+            <h2>Nous négocions des tarifs préférentiels pour vous !</h2>
+            <div class="mb-3">
+                <label for="simulation" class="form-label">Je veux faire une simulation :</label>
+                <select id="simulation" class="form-select">
+                    <option>Assurance Auto</option>
+                    <option>Assurance Santé</option>
+                    <option>Assurance Habitation</option>
+                </select>
+                <button class="btn btn-primary mt-3 w-100">Valider</button>
             </div>
-
-            <!-- Slide 3 -->
-            <div class="swiper-slide" style="background-image: url('assets/img/slide1\ \(5\).jpg');">
-                <div class="container text-center">
-                   <a href="services.html"> <button class="btn btn-light btn-devis"><i class="fa-solid fa-paper-plane"></i> Obtenir une offre</button> </a>
+            <div class="text-center">
+                <div class="call-icon">
+                    <img src="assets/img/iconetel.png" alt="Call Icon" width="50">
                 </div>
-            </div>
-            <!-- Slide 4 -->
-           <div class="swiper-slide" style="background-image: url('assets/img/slide6.jpg');">
-            <div class="container text-center">
-              <a href="obtenir-devis.html">  <button class="btn btn-light btn-devis"><i class="fa-solid fa-file-signature"></i> Demander un devis</button> </a>
+                <button class="btn btn-primary mt-3 w-100">Je souhaite être rappelé(e)</button>
             </div>
         </div>
+
+        <!-- Swiper Slider -->
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('assets/img/slide1\ \(1\).jpg');"></div>
+                <div class="swiper-slide" style="background-image: url('assets/img/slide1\ \(2\).jpg');"></div>
+                <div class="swiper-slide" style="background-image: url('assets/img/slide1\ \(4\).jpg');"></div>
+                <div class="swiper-slide" style="background-image: url('assets/img/slide1\ \(5\).jpg');"></div>
+                <div class="swiper-slide" style="background-image: url('assets/img/slide6.jpg');"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-           <!-- Pagination et Navigation -->
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-</section>
+    </section>
+
+<style>
+/* En-tête */
+#header {
+    background: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sitename {
+    color: #002D72;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
+/* HERO - Organisation en deux colonnes */
+#hero {
+    display: flex;
+    height: 90vh;
+    gap: 0;
+}
+
+/* Bloc flottant fixe à gauche */
+.floating-box {
+    width: 35%;
+    background: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Swiper Slider */
+.swiper {
+    width: 65%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: #002D72;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #0049B7;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    #hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .floating-box, .swiper {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .logo-img {
+        width: 60px;
+    }
+
+    .sitename {
+        font-size: 1.5rem;
+    }
+}
+</style>
+
     
   <!-- Section Produits d'Assurance -->
 <section id="assurances" class="container my-5">
@@ -215,7 +296,113 @@
     </div>
 </section>
 
+<!-- section partenaire -->
 
+        <center><h2>PLUS DE 100 PARTENAIRES </h2></center> 
+
+        <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row gy-4">
+  
+  
+              <style>
+                  .client-logos {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    position: relative;
+                    padding: 20px 0;
+                    background-color: #f8f9fa; /* Couleur de fond optionnelle */
+                  }
+  
+                  .client-logos .logos-slide {
+                    display: inline-block;
+                    animation: scroll 30s linear infinite;
+                  }
+  
+                  .client-logos img {
+                    width: 150px;
+                    height: auto;
+                    margin: 0 30px;
+                    display: inline-block;
+                  }
+  
+                  @keyframes scroll {
+                    from {
+                      transform: translateX(0);
+                    }
+                    to {
+                      transform: translateX(-100%);
+                    }
+                  }
+  
+                  /* Duplique les logos pour un défilement continu */
+                  .client-logos .logos-slide:nth-child(2) {
+                    animation-delay: 0s;
+                  }
+  
+        
+  
+                </style>
+              </head>
+              <body>
+  
+              <div class="client-logos">
+                <div class="logos-slide">
+                    <img src="assets/img/assureur/client-1.png" alt="aesio">
+                    <img src="assets/img/assureur/client-2.png" alt="Client 2">
+                    <img src="assets/img/assureur/client-3.png" alt="Client 3">
+                    <img src="assets/img/assureur/client-4.png" alt="Client 4">
+                    <img src="assets/img/assureur/client-5.png" alt="Client 5">
+                    <img src="assets/img/assureur/client-6.png" alt="Client 6">
+                    <img src="assets/img/assureur/client-7.png" alt="Client 7">
+                    <img src="assets/img/assureur/client-8.png" alt="Client 8">
+                    <img src="assets/img/assureur/client-9.png" alt="Client 9">
+                    <img src="assets/img/assureur/client-10.png" alt="Client 10">
+                    <img src="assets/img/assureur/client-11.jpeg" alt="Client 11">
+                    <img src="assets/img/assureur/client-12.png" alt="Client 12">
+                    <img src="assets/img/assureur/client-13.png" alt="Client 13">
+                    <img src="assets/img/assureur/client-14.png" alt="Client 14">
+                    <img src="assets/img/assureur/client-15.png" alt="Client 15">
+                    <img src="assets/img/assureur/client-16.jpg" alt="Client 16">
+                    <img src="assets/img/assureur/client-17.png" alt="Client 17">
+  
+                </div>
+  
+                <!-- Duplique le même ensemble d'images pour une animation continue -->
+                <div class="logos-slide">
+                  <img src="assets/img/assureur/client-1.png" alt="aesio">
+                  <img src="assets/img/assureur/client-2.png" alt="Client 2">
+                  <img src="assets/img/assureur/client-3.png" alt="Client 3">
+                  <img src="assets/img/assureur/client-4.png" alt="Client 4">
+                  <img src="assets/img/assureur/client-5.png" alt="Client 5">
+                  <img src="assets/img/assureur/client-6.png" alt="Client 6">
+                  <img src="assets/img/assureur/client-7.png" alt="Client 7">
+                  <img src="assets/img/assureur/client-8.png" alt="Client 8">
+                  <img src="assets/img/assureur/client-9.png" alt="Client 9">
+                  <img src="assets/img/assureur/client-10.png" alt="Client 10">
+                  <img src="assets/img/assureur/client-11.jpeg" alt="Client 11">
+                  <img src="assets/img/assureur/client-12.png" alt="Client 12">
+                  <img src="assets/img/assureur/client-13.png" alt="Client 13">
+                  <img src="assets/img/assureur/client-14.png" alt="Client 14">
+                  <img src="assets/img/assureur/client-15.png" alt="Client 15">
+                  <img src="assets/img/assureur/client-16.jpg" alt="Client 16">
+                  <img src="assets/img/assureur/client-17.png" alt="Client 17">
+                </div>
+              </div>
+  
+  
+  
+  
+  
+      </section><!-- /Clients Section -->
+
+
+
+
+ <!-- end section partenaire -->
 
 
   <main class="main">
@@ -401,7 +588,7 @@
       <div class="row gy-4 justify-content-center">
           <div class="col-lg-5">
               <div class="images-overlap">
-                  <img src="assets/img/insurance-1991213_1280.jpg" alt="Assurance" class="img-fluid img-1" data-aos="fade-up">
+                  <img src="assets/img/pourquoi_nous.jpg" alt="Assurance" class="img-fluid img-1" data-aos="fade-up">
               </div>
           </div>
 
