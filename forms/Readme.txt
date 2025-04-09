@@ -1,2 +1,2 @@
-Fully working PHP/AJAX contact form script is available in the pro version of the template.
-You can buy it from: https://bootstrapmade.com/active-bootstrap-website-template/
+Ce site a été developpé par GUILLAUME SERGE M
+DEVELOPPEUR WEB INFORMATIQUE FULLSTACK  

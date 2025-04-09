@@ -50,84 +50,91 @@
     
     <main class="main">
         
-        <!-- Section Simulation -->
-        <section id="simulation" class="bg-light py-5">
-            <div class="container text-center">
-                <h2 class="fw-bold text-success">Obtenez votre devis en quelques clics</h2>
-                <p class="text-muted">Remplissez le formulaire ci-dessous et recevez une offre personnalisée.</p>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label class="form-label">Type de véhicule</label>
-                                    <select class="form-select">
-                                        <option>Voiture Particulière</option>
-                                        <option>Taxi / VTC</option>
-                                        <option>Véhicule Utilitaire</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Usage</label>
-                                    <select class="form-select">
-                                        <option>Personnel</option>
-                                        <option>Professionnel</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Année de mise en circulation</label>
-                                    <input type="number" class="form-control" placeholder="Ex : 2020">
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Bonus / Malus</label>
-                                    <input type="text" class="form-control" placeholder="Ex : 0.85">
-                                </div>
-                            </div>
-                            <button class="btn btn-primary mt-4 w-100">Obtenir mon devis</button>
-                        </form>
-                    </div>
-                </div>
+       <!-- Section Simulation -->
+<section id="simulation" class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold text-success">Obtenez votre devis en quelques clics</h2>
+      <p class="text-muted">Remplissez le formulaire ci-dessous et recevez une offre personnalisée.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form action="forms/sim-devis-auto.php" method="POST">
+                <div class="row g-3">
+              <!-- Champs Informations personnelles -->
+              <div class="col-md-6">
+                <label for="fullName" class="form-label">Nom complet</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Jean Dupont" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Adresse email</label>
+                <input type="email" class="form-control" id="email" placeholder="exemple@mail.com" required>
+              </div>
+              <div class="col-md-6">
+                <label for="phone" class="form-label">Numéro de téléphone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="06 12 34 56 78" required>
+              </div>
+  
+              <!-- Champs liés au véhicule -->
+              <div class="col-md-6">
+                <label class="form-label">Type de véhicule</label>
+                <select class="form-select">
+                  <option>Voiture Particulière</option>
+                  <option>Taxi / VTC</option>
+                  <option>Véhicule Utilitaire</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Usage</label>
+                <select class="form-select">
+                  <option>Personnel</option>
+                  <option>Professionnel</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Année de mise en circulation</label>
+                <input type="number" class="form-control" placeholder="Ex : 2020">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Bonus / Malus</label>
+                <input type="text" class="form-control" placeholder="Ex : 0.85">
+              </div>
             </div>
-        </section>
+            <button class="btn btn-primary mt-4 w-100">Obtenir mon devis</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
     </main>
     
    
     
 
-    <footer id="footer" class="footer light-background"> 
+    <footer id="footer" class="footer light-background">
         <div class="container">
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
+    
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"> 
                     <div class="widget">
-                        <h3 class="widget-heading">À Propos</h3>
-                        <p class="mb-4">
-                            JEMASSUR est un expert en assurances Auto, Moto, Santé, VTC, Taxi, Décennale et RC Pro. Nous accompagnons les particuliers et les professionnels avec des solutions adaptées à leurs besoins.
+                        <h3 class="widget-heading">JEMASSUR</h3>
+                        <p class="mb-3">
+                            Votre expert en assurances Auto, Moto, Santé, VTC, Taxi, Décennale et RC Pro. Solutions adaptées pour particuliers et professionnels.
+                        </p>
+                        <p class="mb-1">
+                            <i class="bi bi-telephone-fill me-2"></i> <a href="tel:+33745801465">07 45 80 14 65</a> 
+                        </p>
+                        <p class="mb-3">
+                            <i class="bi bi-envelope-fill me-2"></i> <a href="mailto:contact@jemassur.fr">contact@jemassur.fr</a> 
                         </p>
                         <p class="mb-0">
-                            <a href="qui-sommes-nous.html" class="btn-learn-more">En savoir plus</a>
+                            <a href="qui-sommes-nous.html" class="btn-learn-more">En savoir plus sur nous</a>
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 ps-lg-5 mb-3 mb-md-0">
+    
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0"> 
                     <div class="widget">
-                        <h3 class="widget-heading">Navigation</h3>
-                        <ul class="list-unstyled float-start me-5">
-                            <li><a href="index.html">Accueil</a></li>
-                            <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
-                            <li><a href="services.html">Nos services</a></li>
-                            <li><a href="#">Mentions légales</a></li>
-                        </ul>
-                        <ul class="list-unstyled float-start">
-                            <li><a href="services.html">Nos assurances</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="#faq">FAQ</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 pl-lg-5">
-                    <div class="widget">
-                        <h3 class="widget-heading">Nos assurances</h3>
+                        <h3 class="widget-heading">Nos Assurances</h3>
                         <ul class="list-unstyled">
                             <li><a href="assurance-auto.html">Assurance Auto</a></li>
                             <li><a href="assurance-moto.html">Assurance Moto</a></li>
@@ -138,39 +145,62 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 pl-lg-5">
+    
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0"> 
                     <div class="widget">
-                        <h3 class="widget-heading">Nous suivre</h3>
-                        <ul class="list-unstyled social-icons light mb-3">
-                            <li><a href="https://web.facebook.com/jemassur"><span class="bi bi-facebook"></span></a></li>
-                            <li><a href="#"><span class="bi bi-twitter-x"></span></a></li>
-                            <li><a href="https://www.linkedin.com/company/jemassur1/?viewAsMember=true"><span class="bi bi-linkedin"></span></a></li>
-                            <li><a href="https://www.instagram.com/jemassur_conseil/"><span class="bi bi-instagram"></span></a></li>
-                            <li><a href="#"><span class="bi bi-youtube"></span></a></li>
-                            <li><a href="https://www.tiktok.com/@jemassur"><span class="bi bi-tiktok"></span></a></li>
+                        <h3 class="widget-heading">Liens Utiles</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Nous contacter</a></li>
+                            <li><a href="mention-legale.html">Mentions légales</a></li>
+                            <li><a href="politique-confidentialité.html">Politique de confidentialité</a></li> 
                         </ul>
                     </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <div class="widget">
-                        <div class="footer-subscribe">
-                            <h3 class="widget-heading">Abonnez-vous</h3>
-                            <form action="forms/newsletter.php" method="post" class="php-email-form">
-                                <div class="mb-2 d-flex">
-                                    <input type="email" class="form-control me-2" name="email" placeholder="Entrez votre email" required>
-                                    <button type="submit" class="btn btn-primary">
-                                        <span class="bi bi-arrow-right"></span>
-                                    </button>
-                                </div>
-                                <div class="loading">Chargement...</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Votre abonnement a bien été pris en compte.</div>
-                            </form>
-                        </div>
+                        <h3 class="widget-heading">Suivez-nous</h3>
+                        <ul class="list-unstyled social-icons light mb-4">
+                            <li><a href="https://web.facebook.com/jemassur" aria-label="Facebook"><span class="bi bi-facebook"></span></a></li>
+                            <li><a href="https://x.com/JEMASSUR_fr" aria-label="Twitter X"><span class="bi bi-twitter-x"></span></a></li>
+                            <li><a href="https://www.linkedin.com/company/jemassur1/?viewAsMember=true" aria-label="LinkedIn"><span class="bi bi-linkedin"></span></a></li>
+                            <li><a href="https://www.instagram.com/jemassur_conseil/" aria-label="Instagram"><span class="bi bi-instagram"></span></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCGbItxUbZmQSEOM1GMw8a5A" aria-label="YouTube"><span class="bi bi-youtube"></span></a></li>
+                            <li><a href="https://www.tiktok.com/@jemassur?lang=fr" aria-label="TikTok"><span class="bi bi-tiktok"></span></a></li>
+                        </ul>
+                    </div>
+                     <div class="widget footer-subscribe"> 
+                        <h3 class="widget-heading">Newsletter</h3>
+                        <p class="small mb-2">Recevez nos conseils et actualités.</p> 
+                        <form action="forms/newsletter.php" method="post" class="php-email-form">
+                            <div class="input-group mb-2"> 
+                                <input type="email" class="form-control" name="email" placeholder="Votre email" required aria-label="Votre email pour la newsletter">
+                                <button type="submit" class="btn btn-primary">
+                                    <span class="bi bi-arrow-right"></span>
+                                </button>
+                            </div>
+                            <div class="loading">Chargement...</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Votre abonnement a bien été pris en compte.</div>
+                        </form>
                     </div>
                 </div>
+    
+            </div> 
+    
+            <div class="text-center mt-4 pt-4 border-top"> 
+                <p class="mb-1">
+                    © <script>document.write(new Date().getFullYear());</script> JEMASSUR. Tous droits réservés.
+                </p>
+                <p class="small mb-0"> 
+                    <a href="mention-legale.html">Mentions légales</a> | <a href="politique-confidentialité.html">Politique de confidentialité</a> | <a href="plan-site.html">Plan du site</a> 
+                </p>
             </div>
-            <div class="text-center mt-4">
-                <p class="mb-0">&copy; 2025 JEMASSUR. Tous droits réservés.</p>
-            </div>
+    
         </div>
     </footer>
 
