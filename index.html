@@ -15,8 +15,8 @@
   <meta name="robots" content="index, follow">
 
   <!-- Favicons -->
-  <link href="assets/img/ICONE.png" rel="icon">
-  <link href="assets/img/ICONE.png" rel="apple-touch-icon">
+  <link href="assets/img/iconejemassur.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -64,8 +64,8 @@
     <header id="header" class="header d-flex align-items-center sticky-top"> 
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center">
-                <img src="assets/img/ICONE.png" alt="JEMASSUR" class="logo-img" loading="lazy">
-                <h1 class="sitename">JEmassur</h1>
+                <!-- <img src="assets/img/ICONE.png" alt="JEMASSUR" class="logo-img" loading="lazy"> -->
+                <h2 class="sitename">JEmassur</h2>
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul>
@@ -100,7 +100,7 @@
             </div>
             <div class="text-center">
                 <div class="call-icon">
-                <a href="formulaire-rappel.html">   <img src="assets/img/iconetel.png" alt="Call Icon" width="50" loading="lazy"></a> 
+                <a href="formulaire-rappel.html">   <img src="assets/img/iconeconseiller.png" alt="Call Icon" width="150" loading="lazy"></a> 
                 </div>
                 <a href="formulaire-rappel.html">
                     <button class="btn btn-primary mt-3 w-100">Je souhaite être rappelé(e)</button>
@@ -137,184 +137,142 @@
         </div>
     </section>
 
-<style>
-/* En-tête */
-#header {
-    background: #ffffff;
-    padding: 10px 0;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.logo-img {
-    width: 80px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.sitename {
-    color: #057b34;
-    font-weight: bold;
-    font-size: 1.8rem;
-    margin-left: 10px;
-}
-
-/* HERO - Organisation en deux colonnes */
-#hero {
-    display: flex;
-    height: 90vh;
-    gap: 0;
-}
-
-/* Bloc flottant fixe à gauche */
-.floating-box {
-    width: 35%;
-    background: white;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Swiper Slider */
-.swiper {
-    width: 65%;
-    height: 100%;
-}
-
-.swiper-slide {
-    background-size: cover;
-    background-position: center;
-}
-
-/* Boutons */
-.btn-primary {
-    background-color: #002D72;
-    border: none;
-    font-weight: bold;
-}
-
-.btn-primary:hover {
-    background-color: #0049B7;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-    #hero {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .floating-box, .swiper {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .logo-img {
-        width: 60px;
-    }
-
-    .sitename {
-        font-size: 1.5rem;
-    }
-}
-</style>
-
-    
-  <!-- Section Produits d'Assurance -->
+   
+<!-- Section Produits d'Assurance -->
 <section id="assurances" class="container my-5">
-    <h2 class="text-center mb-4">Nos Offres d'Assurance</h2>
-
-    <!-- Assurances pour les Particuliers -->
+    <h2 class="text-center mb-4 fw-bold">Nos Offres d'Assurance</h2>
+  
+    <!-- Assurances Particuliers -->
     <h3 class="text-center text-primary my-4">Assurances pour Particuliers</h3>
     <div class="row g-4">
-        <!-- Assurance Auto -->
-        <div class="col-md-4 col-lg-3">
-            <a href="assurance-auto.html" class="text-decoration-none">
-                <div class="card assurance-item bg-primary text-white text-center p-4">
-                    <i class="fas fa-car fa-3x mb-3"></i>
-                    <h4>Assurance Auto</h4>
-                    <p class="description">Protégez votre véhicule avec une couverture adaptée.</p>
-                </div>
-            </a>
-        </div>
-        <!-- Assurance Moto -->
-        <div class="col-md-4 col-lg-3">
-            <a href="assurance-moto.html" class="text-decoration-none">
-                <div class="card assurance-item bg-info text-white text-center p-4">
-                    <i class="fas fa-motorcycle fa-3x mb-3"></i>
-                    <h4>Assurance Moto</h4>
-                    <p class="description">Une protection optimale pour votre deux-roues.</p>
-                </div>
-            </a>
-        </div>
-        <!-- Assurance Santé -->
-        <div class="col-md-4 col-lg-3">
-            <a href="assurance-sante.html" class="text-decoration-none">
-                <div class="card assurance-item bg-danger text-white text-center p-4">
-                    <i class="fas fa-heartbeat fa-3x mb-3"></i>
-                    <h4>Assurance Santé</h4>
-                    <p class="description">Des soins de qualité pour vous et votre famille.</p>
-                </div>
-            </a>
-        </div>
-        <!-- Assurance Habitation -->
-        <div class="col-md-4 col-lg-3">
-            <a href="assurance-habitation.html" class="text-decoration-none">
-                <div class="card assurance-item bg-success text-white text-center p-4">
-                    <i class="fas fa-home fa-3x mb-3"></i>
-                    <h4>Assurance Habitation</h4>
-                    <p class="description">Protégez votre maison et vos biens.</p>
-                </div>
-            </a>
-        </div>
+      <!-- Exemple Assurance Auto -->
+      <div class="col-md-6 col-lg-3">
+        <a href="assurance-auto.html" class="text-decoration-none">
+          <div class="card h-100 shadow-lg border-0 bg-light">
+            <img src="assets/img/gridauto.png" class="card-img-top" alt="Assurance Auto">
+            <div class="card-body text-center">
+              <i class="fas fa-car fa-2x text-primary mb-2"></i>
+              <h5 class="card-title fw-bold">Assurance Auto</h5>
+              <p class="card-text">Protégez votre véhicule avec une couverture adaptée.</p>
+              <span class="btn btn-outline-primary btn-sm mt-2">En savoir plus</span>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Assurance Moto -->
+      <div class="col-md-6 col-lg-3">
+        <a href="assurance-moto.html" class="text-decoration-none">
+          <div class="card h-100 shadow-lg border-0 bg-light">
+            <img src="images/moto.jpg" class="card-img-top" alt="Assurance Moto">
+            <div class="card-body text-center">
+              <i class="fas fa-motorcycle fa-2x text-danger mb-2"></i>
+              <h5 class="card-title fw-bold">Assurance Moto</h5>
+              <p class="card-text">Une protection optimale pour votre deux-roues.</p>
+              <span class="btn btn-outline-danger btn-sm mt-2">En savoir plus</span>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Santé -->
+      <div class="col-md-6 col-lg-3">
+        <a href="assurance-sante.html" class="text-decoration-none">
+          <div class="card h-100 shadow-lg border-0 bg-light">
+            <img src="assets/img/gridsanté.png" class="card-img-top" alt="Assurance Santé">
+            <div class="card-body text-center">
+              <i class="fas fa-heartbeat fa-2x text-success mb-2"></i>
+              <h5 class="card-title fw-bold">Assurance Santé</h5>
+              <p class="card-text">Des soins de qualité pour vous et votre famille.</p>
+              <span class="btn btn-outline-success btn-sm mt-2">En savoir plus</span>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Habitation -->
+      <div class="col-md-6 col-lg-3">
+        <a href="assurance-habitation.html" class="text-decoration-none">
+          <div class="card h-100 shadow-lg border-0 bg-light">
+            <img src="images/maison.jpg" class="card-img-top" alt="Assurance Habitation">
+            <div class="card-body text-center">
+              <i class="fas fa-home fa-2x text-warning mb-2"></i>
+              <h5 class="card-title fw-bold">Assurance Habitation</h5>
+              <p class="card-text">Protégez votre maison et vos biens.</p>
+              <span class="btn btn-outline-warning btn-sm mt-2">En savoir plus</span>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
-
-    <!-- Assurances pour les Professionnels -->
-    <h3 class="text-center text-warning my-4">Assurances pour Professionnels</h3>
+  
+    <!-- Assurances Pros -->
+    <h3 class="text-center text-warning my-5">Assurances pour Professionnels</h3>
     <div class="row g-4">
-        <!-- Assurance RC PRO -->
-        <div class="col-md-4 col-lg-3">
-            <a href="assurance-rc-pro.html" class="text-decoration-none">
-                <div class="card assurance-item bg-dark text-white text-center p-4">
-                    <i class="fas fa-briefcase fa-3x mb-3"></i>
-                    <h4>Assurance RC PRO</h4>
-                    <p class="description">Sécurisez votre activité professionnelle.</p>
-                </div>
-            </a>
-        </div>
-        <!-- Assurance Décennale -->
-        <div class="col-md-4 col-lg-3">
-            <a href="assurance-decennale.html" class="text-decoration-none">
-                <div class="card assurance-item bg-warning text-dark text-center p-4">
-                    <i class="fas fa-hard-hat fa-3x mb-3"></i>
-                    <h4>Assurance Décennale</h4>
-                    <p class="description">Couvrez vos travaux sur 10 ans.</p>
-                </div>
-            </a>
-        </div>
-        <!-- Assurance VTC/Taxi -->
-        <div class="col-md-4 col-lg-3">
-            <a href="assurance-vtc-taxi.html" class="text-decoration-none">
-                <div class="card assurance-item bg-secondary text-white text-center p-4">
-                    <i class="fas fa-taxi fa-3x mb-3"></i>
-                    <h4>Assurance VTC/TAXI</h4>
-                    <p class="description">Sécurisez vos trajets et vos passagers.</p>
-                </div>
-            </a>
-        </div>
-        <!-- Mutuelle Senior -->
-        <div class="col-md-4 col-lg-3">
-            <a href="mutuelle-senior.html" class="text-decoration-none">
-                <div class="card assurance-item bg-pink text-white text-center p-4">
-                    <i class="fas fa-user-shield fa-3x mb-3"></i>
-                    <h4>Mutuelle Senior</h4>
-                    <p class="description">Des offres santé adaptées aux seniors.</p>
-                </div>
-            </a>
-        </div>
+      <!-- RC Pro -->
+      <div class="col-md-6 col-lg-3">
+        <a href="assurance-rc-pro.html" class="text-decoration-none">
+          <div class="card h-100 shadow-lg border-0 bg-light">
+            <img src="images/rcpro.jpg" class="card-img-top" alt="RC Pro">
+            <div class="card-body text-center">
+              <i class="fas fa-briefcase fa-2x text-dark mb-2"></i>
+              <h5 class="card-title fw-bold">Assurance RC PRO</h5>
+              <p class="card-text">Sécurisez votre activité professionnelle.</p>
+              <span class="btn btn-outline-dark btn-sm mt-2">En savoir plus</span>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Décennale -->
+      <div class="col-md-6 col-lg-3">
+        <a href="assurance-decennale.html" class="text-decoration-none">
+          <div class="card h-100 shadow-lg border-0 bg-light">
+            <img src="images/decennale.jpg" class="card-img-top" alt="Décennale">
+            <div class="card-body text-center">
+              <i class="fas fa-hard-hat fa-2x text-warning mb-2"></i>
+              <h5 class="card-title fw-bold">Assurance Décennale</h5>
+              <p class="card-text">Couvrez vos travaux sur 10 ans.</p>
+              <span class="btn btn-outline-warning btn-sm mt-2">En savoir plus</span>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+      <!-- VTC / Taxi -->
+      <div class="col-md-6 col-lg-3">
+        <a href="assurance-vtc-taxi.html" class="text-decoration-none">
+          <div class="card h-100 shadow-lg border-0 bg-light">
+            <img src="assets/img/gridvtc.png" class="card-img-top" alt="VTC / Taxi" alt="lazy">
+            <div class="card-body text-center">
+              <i class="fas fa-taxi fa-2x text-secondary mb-2"></i>
+              <h5 class="card-title fw-bold">Assurance VTC / TAXI</h5>
+              <p class="card-text">Sécurisez vos trajets et vos passagers.</p>
+              <span class="btn btn-outline-secondary btn-sm mt-2">En savoir plus</span>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+      <!-- Mutuelle Senior -->
+      <div class="col-md-6 col-lg-3">
+        <a href="mutuelle-senior.html" class="text-decoration-none">
+          <div class="card h-100 shadow-lg border-0 bg-light">
+            <img src="assets/img/gridsenior.png" class="card-img-top" alt="Mutuelle Senior">
+            <div class="card-body text-center">
+              <i class="fas fa-user-shield fa-2x text-pink mb-2"></i>
+              <h5 class="card-title fw-bold">Mutuelle Senior</h5>
+              <p class="card-text">Des offres santé adaptées aux seniors.</p>
+              <span class="btn btn-outline-pink btn-sm mt-2">En savoir plus</span>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
-</section>
+  </section>
+  
+
+
 
 <!-- section partenaire -->
 
@@ -334,7 +292,7 @@
                     white-space: nowrap;
                     position: relative;
                     padding: 20px 0;
-                    background-color: #4778a9; /* Couleur de fond optionnelle */
+                    background-color: #7d9bba; /* Couleur de fond optionnelle */
                   }
   
                   .client-logos .logos-slide {
@@ -366,7 +324,6 @@
         
   
                 </style>
-              </head>
               <body>
   
               <div class="client-logos">
@@ -461,22 +418,22 @@
               </script>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="assets/img/chauffeurvtcjoie.png" alt="Image" class="img-fluid">
+                  <img src="assets/img/slidebienvenue (1).jpg" alt="Image" class="img-fluid">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/maison.jpg" alt="Image" class="img-fluid">
+                  <img src="assets/img/slidebienvenue (2).jpg" alt="Image" class="img-fluid">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/auto.png" alt="Image" class="img-fluid">
+                  <img src="assets/img/slidebienvenue (3).jpg" alt="Image" class="img-fluid">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/peter-conlan-LEgwEaBVGMo-unsplash.jpg" alt="Image" class="img-fluid" style="border-radius: 10px;">
+                  <img src="assets/img/slidebienvenue (4).jpg" alt="Image" class="img-fluid" style="border-radius: 10px;">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/name_-gravity-_AdUs32i0jc-unsplash.jpg" alt="Image" class="img-fluid" style="border-radius: 10px;">
+                  <img src="assets/img/slidebienvenue (5).jpg" alt="Image" class="img-fluid" style="border-radius: 10px;">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/auto.png" alt="Image" class="img-fluid">
+                  <img src="assets/img/santé.jpg" alt="Image" class="img-fluid">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -484,9 +441,9 @@
           </div>
           <div class="col-lg-4 order-lg-1">
             <span class="section-subtitle" data-aos="fade-up">Bienvenue</span>
-            <h1 class="mb-4" data-aos="fade-up">
+            <h3 class="mb-4" data-aos="fade-up">
               chez Jemassur !
-            </h1>
+            </h3>
             <p data-aos="fade-up">
               Trouvez l’assurance adaptée à vos besoins : <br> Auto/Moto, VTC/Taxi, Décennale/RC Pro, Habitation,Santé. <br> Des garanties complètes, des tarifs compétitifs et un accompagnement sur mesure.
             </p>
@@ -510,7 +467,7 @@
             <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
               <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
                 <div class="img">
-                  <img src="assets/img/comparateurimg.png" alt="circle image" class="img-fluid">
+                  <img src="assets/img/mission.jpg" alt="circle image" class="img-fluid">
                 </div>
               </div>
             </div>
@@ -650,108 +607,6 @@
   </div>
 </section>
 <!-- /Section Pourquoi Nous -->
-
-
-    <!-- Section Blog -->
-<section id="blog-posts" class="blog-posts section">
-  <!-- Titre de la section -->
-  <div class="container section-title" data-aos="fade-up">
-      <p>Derniers Articles</p>
-      <h2>Nos Conseils & Astuces Assurance</h2>
-  </div><!-- Fin Titre Section -->
-
-  <div class="container">
-      <div class="row gy-4">
-
-          <!-- Article 1 -->
-          <div class="col-md-6 col-lg-4">
-              <div class="post-entry" data-aos="fade-up" data-aos-delay="100">
-                  <a href="#" class="thumb d-block">
-                      <img src="assets/img/assuranceAuto2025.png" alt="Assurance Auto" class="img-fluid rounded">
-                  </a>
-                  <div class="post-content">
-                      <div class="meta">
-                          <a href="#" class="cat">Assurance Auto</a> •
-                          <span class="date">15 Janvier 2025</span>
-                      </div>
-                      <h3><a href="#">Comment choisir la meilleure assurance auto en 2025 ?</a></h3>
-                      <p>
-                          Découvrez les critères essentiels pour comparer efficacement les offres et économiser sur votre assurance auto.
-                      </p>
-                      <div class="d-flex author align-items-center">
-                          <div class="pic">
-                              <img src="assets/img/team/team-2.jpg" alt="Auteur" class="img-fluid rounded-circle">
-                          </div>
-                          <div class="author-name">
-                              <strong class="d-block">Julie Moreau</strong>
-                              <span>Experte en Assurance</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Article 2 -->
-          <div class="col-md-6 col-lg-4">
-              <div class="post-entry" data-aos="fade-up" data-aos-delay="200">
-                  <a href="#" class="thumb d-block">
-                      <img src="assets/img/seniorheureux.jpg" alt="Assurance Santé" class="img-fluid rounded">
-                  </a>
-                  <div class="post-content">
-                      <div class="meta">
-                          <a href="#" class="cat">Assurance Santé</a> •
-                          <span class="date">10 Janvier 2025</span>
-                      </div>
-                      <h3><a href="#">Mutuelle Santé : Quelle couverture choisir selon vos besoins ?</a></h3>
-                      <p>
-                          Comparatif des meilleures mutuelles en fonction de votre âge, budget et situation personnelle.
-                      </p>
-                      <div class="d-flex author align-items-center">
-                          <div class="pic">
-                              <img src="assets/img/team/team-3.jpg" alt="Auteur" class="img-fluid rounded-circle">
-                          </div>
-                          <div class="author-name">
-                              <strong class="d-block">Lucas Bernard</strong>
-                              <span>Spécialiste Assurance Santé</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Article 3 -->
-          <div class="col-md-6 col-lg-4">
-              <div class="post-entry" data-aos="fade-up" data-aos-delay="300">
-                  <a href="#" class="thumb d-block">
-                      <img src="assets/img/habitationassurance.png" alt="Assurance Habitation" class="img-fluid rounded">
-                  </a>
-                  <div class="post-content">
-                      <div class="meta">
-                          <a href="#" class="cat">Assurance Habitation</a> •
-                          <span class="date">5 Janvier 2025</span>
-                      </div>
-                      <h3><a href="#">Assurance Habitation : Comment éviter les pièges des contrats ?</a></h3>
-                      <p>
-                          Tout ce qu'il faut savoir pour bien choisir votre assurance habitation et éviter les mauvaises surprises.
-                      </p>
-                      <div class="d-flex author align-items-center">
-                          <div class="pic">
-                              <img src="assets/img/team/team-4.jpg" alt="Auteur" class="img-fluid rounded-circle">
-                          </div>
-                          <div class="author-name">
-                              <strong class="d-block">Sophie Dupont</strong>
-                              <span>Consultante Assurance</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-      </div>
-  </div>
-</section>
-<!-- /Section Blog -->
-
 <!-- Section Nos Assurances -->
 <section id="assurances" class="assurances section light-background">
   <div class="container">
@@ -833,7 +688,7 @@
                   </script>
                   <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                          <img src="assets/img/protectioncomplete.jpg" alt="Protection Complète" class="img-fluid">
+                          <img src="assets/img/" alt="Protection Complète" class="img-fluid">
                       </div>
                       <div class="swiper-slide">
                           <img src="assets/img/tariflogo.jpg" alt="Tarifs Personnalisés" class="img-fluid">
