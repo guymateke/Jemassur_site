@@ -80,62 +80,62 @@
             </nav>
         </div>
     </header>
-
-    <!-- Section Hero -->
-    <section id="hero" class="d-flex">
-        <div class="floating-box">
-            <h2>Nous négocions des tarifs préférentiels pour vous !</h2>
-            <div class="mb-3">
-                <label for="simulation" class="form-label">Je veux faire une simulation :</label>
-                <select id="simulation" class="form-select">
-                    <option value="" selected disabled>Choisissez une option</option>
-                    <option value="simulation-auto.html">Assurance Auto</option>
-                    <option value="simulation-sante.html">Assurance Santé</option>
-                    <option value="simulation-moto.html">Assurance MOTO</option>
-                    <option value="simulation-rcpro.html">Assurance RC PRO</option>
-                    <option value="simulation-decennale.html">Assurance DECENNALE</option>
-                    <option value="simulation-habitation.html">Assurance HABITATON</option>
-                </select>
-                <button id="validate-btn" class="btn btn-primary mt-3 w-100">Valider</button>
-            </div>
-            <div class="text-center">
-                <div class="call-icon">
-                <a href="formulaire-rappel.html">   <img src="assets/img/iconeconseiller.png" alt="Call Icon" width="150" loading="lazy"></a> 
-                </div>
-                <a href="formulaire-rappel.html">
-                    <button class="btn btn-primary mt-3 w-100">Je souhaite être rappelé(e)</button>
-                </a>
-            </div>
+<!-- Section Hero -->
+<section id="hero" class="d-flex flex-wrap">
+    <div class="floating-box">
+      <h2>Nous négocions des tarifs préférentiels pour vous !</h2>
+      <div class="mb-3">
+        <label for="simulation" class="form-label">Je veux faire une simulation :</label>
+        <select id="simulation" class="form-select">
+          <option value="" selected disabled>Choisissez une option</option>
+          <option value="simulation-auto.html">Assurance Auto</option>
+          <option value="simulation-sante.html">Assurance Santé</option>
+          <option value="simulation-moto.html">Assurance MOTO</option>
+          <option value="simulation-rcpro.html">Assurance RC PRO</option>
+          <option value="simulation-decennale.html">Assurance DECENNALE</option>
+          <option value="simulation-habitation.html">Assurance HABITATION</option>
+        </select>
+        <button id="validate-btn" class="btn btn-primary mt-3 w-100">Valider</button>
+      </div>
+      <div class="text-center">
+        <div class="call-icon">
+          <a href="formulaire-rappel.html">
+            <img src="assets/img/iconeconseiller.png" alt="Call Icon" width="150" loading="lazy">
+          </a>
         </div>
-        
-        <script>
-            document.getElementById("validate-btn").addEventListener("click", function () {
-                var select = document.getElementById("simulation");
-                var selectedValue = select.value;
-        
-                if (selectedValue) {
-                    window.location.href = selectedValue;
-                } else {
-                    alert("Veuillez sélectionner une option avant de valider.");
-                }
-            });
-        </script>
-        
-
-        <!-- Swiper Slider -->
-        <div class="swiper hero-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url('assets/img/slide1\ \(1\).webp');" loading="lazy"></div>
-                <div class="swiper-slide" style="background-image: url('assets/img/slide1\ \(2\).jpg');" loading="lazy"></div>
-                <div class="swiper-slide" style="background-image: url('assets/img/slide1\ \(4\).webp');" loading="lazy"></div>
-                <div class="swiper-slide" style="background-image: url('assets/img/slide1\ \(5\).webp');" loading="lazy"></div>
-                <div class="swiper-slide" style="background-image: url('assets/img/slide6.jpg');" loading="lazy"></div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section>
+        <a href="formulaire-rappel.html">
+          <button class="btn btn-primary mt-3 w-100">Je souhaite être rappelé(e)</button>
+        </a>
+      </div>
+    </div>
+  
+    <!-- Swiper Slider -->
+    <div class="swiper hero-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('assets/img/slide1%20(1).webp');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/slide1%20(2).jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/slide1%20(4).webp');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/slide1%20(5).webp');"></div>
+        <div class="swiper-slide" style="background-image: url('assets/img/slide6.webp');"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+  
+  <script>
+    document.getElementById("validate-btn").addEventListener("click", function () {
+      const select = document.getElementById("simulation");
+      const selectedValue = select.value;
+      if (selectedValue) {
+        window.location.href = selectedValue;
+      } else {
+        alert("Veuillez sélectionner une option avant de valider.");
+      }
+    });
+  </script>
+  
 
    
 <!-- Section Produits d'Assurance -->
@@ -164,7 +164,7 @@
       <div class="col-md-6 col-lg-3">
         <a href="assurance-moto.html" class="text-decoration-none">
           <div class="card h-100 shadow-lg border-0 bg-light">
-            <img src="images/moto.jpg" class="card-img-top" alt="Assurance Moto">
+            <img src="assets/img/gridmoto.png" class="card-img-top" alt="Assurance Moto">
             <div class="card-body text-center">
               <i class="fas fa-motorcycle fa-2x text-danger mb-2"></i>
               <h5 class="card-title fw-bold">Assurance Moto</h5>
@@ -194,7 +194,7 @@
       <div class="col-md-6 col-lg-3">
         <a href="assurance-habitation.html" class="text-decoration-none">
           <div class="card h-100 shadow-lg border-0 bg-light">
-            <img src="images/maison.jpg" class="card-img-top" alt="Assurance Habitation">
+            <img src="assets/img/gridhabitation.png" class="card-img-top" alt="Assurance Habitation">
             <div class="card-body text-center">
               <i class="fas fa-home fa-2x text-warning mb-2"></i>
               <h5 class="card-title fw-bold">Assurance Habitation</h5>
@@ -274,741 +274,653 @@
 
 
 
-<!-- section partenaire -->
+<!-- Section Partenaires Professionnels -->
+<section id="clients" class="py-5 bg-light">
+  <div class="container" data-aos="fade-up">
 
-        <center><h2>PLUS DE 100 PARTENAIRES </h2></center> 
+    <!-- Titre -->
+    <div class="text-center mb-5">
+      <span class="text-uppercase text-primary fw-bold small">Nos partenaires</span>
+      <h2 class="fw-bold mt-2">Plus de 100 assureurs et courtiers de confiance</h2>
+      <p class="text-muted">Nous collaborons avec les plus grands noms de l'assurance pour vous offrir les meilleures garanties au meilleur prix.</p>
+    </div>
 
-        <!-- Clients Section -->
-    <section id="clients" class="clients section">
+    <!-- Slider Logos partenaires -->
+    <div class="client-carousel position-relative overflow-hidden">
+      <div class="logos-track d-flex align-items-center">
+        <!-- Logos (boucle unique) -->
+        <img src="assets/img/assureur/client-1.png" alt="Aesio" class="client-logo">
+        <img src="assets/img/assureur/client-2.png" alt="Client 2" class="client-logo">
+        <img src="assets/img/assureur/client-3.png" alt="Client 3" class="client-logo">
+        <img src="assets/img/assureur/client-4.png" alt="Client 4" class="client-logo">
+        <img src="assets/img/assureur/client-5.png" alt="Client 5" class="client-logo">
+        <img src="assets/img/assureur/client-6.png" alt="Client 6" class="client-logo">
+        <img src="assets/img/assureur/client-7.png" alt="Client 7" class="client-logo">
+        <img src="assets/img/assureur/client-8.png" alt="Client 8" class="client-logo">
+        <img src="assets/img/assureur/client-9.png" alt="Client 9" class="client-logo">
+        <img src="assets/img/assureur/client-10.png" alt="Client 10" class="client-logo">
+        <img src="assets/img/assureur/client-11.jpeg" alt="Client 11" class="client-logo">
+        <img src="assets/img/assureur/client-12.png" alt="Client 12" class="client-logo">
+        <img src="assets/img/assureur/client-13.png" alt="Client 13" class="client-logo">
+        <img src="assets/img/assureur/client-14.png" alt="Client 14" class="client-logo">
+        <img src="assets/img/assureur/client-15.png" alt="Client 15" class="client-logo">
+        <img src="assets/img/assureur/client-16.jpg" alt="Client 16" class="client-logo">
+        <img src="assets/img/assureur/client-17.png" alt="Client 17" class="client-logo">
 
-        <div class="container" data-aos="fade-up">
-  
-          <div class="row gy-4">
-  
-  
-              <style>
-                  .client-logos {
-                    overflow: hidden;
-                    white-space: nowrap;
-                    position: relative;
-                    padding: 20px 0;
-                    background-color: #7d9bba; /* Couleur de fond optionnelle */
-                  }
-  
-                  .client-logos .logos-slide {
-                    display: inline-block;
-                    animation: scroll 30s linear infinite;
-                  }
-  
-                  .client-logos img {
-                    width: 150px;
-                    height: auto;
-                    margin: 0 30px;
-                    display: inline-block;
-                  }
-  
-                  @keyframes scroll {
-                    from {
-                      transform: translateX(0);
-                    }
-                    to {
-                      transform: translateX(-100%);
-                    }
-                  }
-  
-                  /* Duplique les logos pour un défilement continu */
-                  .client-logos .logos-slide:nth-child(2) {
-                    animation-delay: 0s;
-                  }
-  
-        
-  
-                </style>
-              <body>
-  
-              <div class="client-logos">
-                <div class="logos-slide">
-                    <img src="assets/img/assureur/client-1.png" alt="aesio">
-                    <img src="assets/img/assureur/client-2.png" alt="Client 2">
-                    <img src="assets/img/assureur/client-3.png" alt="Client 3">
-                    <img src="assets/img/assureur/client-4.png" alt="Client 4">
-                    <img src="assets/img/assureur/client-5.png" alt="Client 5">
-                    <img src="assets/img/assureur/client-6.png" alt="Client 6">
-                    <img src="assets/img/assureur/client-7.png" alt="Client 7">
-                    <img src="assets/img/assureur/client-8.png" alt="Client 8">
-                    <img src="assets/img/assureur/client-9.png" alt="Client 9">
-                    <img src="assets/img/assureur/client-10.png" alt="Client 10">
-                    <img src="assets/img/assureur/client-11.jpeg" alt="Client 11">
-                    <img src="assets/img/assureur/client-12.png" alt="Client 12">
-                    <img src="assets/img/assureur/client-13.png" alt="Client 13">
-                    <img src="assets/img/assureur/client-14.png" alt="Client 14">
-                    <img src="assets/img/assureur/client-15.png" alt="Client 15">
-                    <img src="assets/img/assureur/client-16.jpg" alt="Client 16">
-                    <img src="assets/img/assureur/client-17.png" alt="Client 17">
-  
-                </div>
-  
-                <!-- Duplique le même ensemble d'images pour une animation continue -->
-                <div class="logos-slide">
-                  <img src="assets/img/assureur/client-1.png" alt="aesio">
-                  <img src="assets/img/assureur/client-2.png" alt="Client 2">
-                  <img src="assets/img/assureur/client-3.png" alt="Client 3">
-                  <img src="assets/img/assureur/client-4.png" alt="Client 4">
-                  <img src="assets/img/assureur/client-5.png" alt="Client 5">
-                  <img src="assets/img/assureur/client-6.png" alt="Client 6">
-                  <img src="assets/img/assureur/client-7.png" alt="Client 7">
-                  <img src="assets/img/assureur/client-8.png" alt="Client 8">
-                  <img src="assets/img/assureur/client-9.png" alt="Client 9">
-                  <img src="assets/img/assureur/client-10.png" alt="Client 10">
-                  <img src="assets/img/assureur/client-11.jpeg" alt="Client 11">
-                  <img src="assets/img/assureur/client-12.png" alt="Client 12">
-                  <img src="assets/img/assureur/client-13.png" alt="Client 13">
-                  <img src="assets/img/assureur/client-14.png" alt="Client 14">
-                  <img src="assets/img/assureur/client-15.png" alt="Client 15">
-                  <img src="assets/img/assureur/client-16.jpg" alt="Client 16">
-                  <img src="assets/img/assureur/client-17.png" alt="Client 17">
-                </div>
-              </div>
-  
-  
-  
-  
-  
-      </section><!-- /Clients Section -->
+        <!-- Dupliquer les logos pour l'effet infini -->
+        <img src="assets/img/assureur/client-1.png" alt="Aesio" class="client-logo">
+        <img src="assets/img/assureur/client-2.png" alt="Client 2" class="client-logo">
+        <!-- ... (mêmes logos pour boucle infinie) -->
+      </div>
+    </div>
 
+  </div>
+</section>
 
+<!-- Styles personnalisés -->
+<style>
+  .client-carousel {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
 
+  .logos-track {
+    animation: scrollLeft 40s linear infinite;
+    width: max-content;
+    gap: 60px;
+  }
 
- <!-- end section partenaire -->
+  .client-logo {
+    width: 120px;
+    height: auto;
+    margin: 0 20px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+
+  .client-logo:hover {
+    filter: grayscale(0%);
+  }
+
+  @keyframes scrollLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .client-logo {
+      width: 80px;
+      margin: 0 10px;
+    }
+  }
+</style>
 
 
   <main class="main">
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="400">
-            <div class="swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  },
-                  "breakpoints": {
-                    "320": {
-                      "slidesPerView": 1,
-                      "spaceBetween": 40
-                    },
-                    "1200": {
-                      "slidesPerView": 1,
-                      "spaceBetween": 1
-                    }
-                  }
-                }
-              </script>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="assets/img/slidebienvenue (1).jpg" alt="Image" class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/slidebienvenue (2).jpg" alt="Image" class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/slidebienvenue (3).jpg" alt="Image" class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/slidebienvenue (4).jpg" alt="Image" class="img-fluid" style="border-radius: 10px;">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/slidebienvenue (5).jpg" alt="Image" class="img-fluid" style="border-radius: 10px;">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/santé.jpg" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <div class="col-lg-4 order-lg-1">
-            <span class="section-subtitle" data-aos="fade-up">Bienvenue</span>
-            <h3 class="mb-4" data-aos="fade-up">
-              chez Jemassur !
-            </h3>
-            <p data-aos="fade-up">
-              Trouvez l’assurance adaptée à vos besoins : <br> Auto/Moto, VTC/Taxi, Décennale/RC Pro, Habitation,Santé. <br> Des garanties complètes, des tarifs compétitifs et un accompagnement sur mesure.
-            </p>
-            <p class="mt-5" data-aos="fade-up">
-                <a href="obtenir-devis.html" class="btn btn-get-started btn-lg btn-primary" style="font-size: 1.2rem; padding: 15px 30px; font-weight: bold;">
-                    🚀 Obtenez votre devis en quelques clics ! 
-                </a>
-            </p>
-        </div>
-        
-        </div>
-      </div>
-    </section><!-- /About Section -->
-
-    <!-- About 2 Section -->
-    <section id="about-2" class="about-2 section light-background">
-
-      <div class="container">
-        <div class="content">
-          <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
-              <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
-                <div class="img">
-                  <img src="assets/img/mission.jpg" alt="circle image" class="img-fluid">
-                </div>
-              </div>
-            </div>
-
-            <div class="offset-md-0 offset-lg-1 col-sm-12 col-md-5 col-lg-5 col-xl-4" data-aos="fade-up">
-              <div class="px-3">
-                <span class="content-subtitle">Notre Mission</span>
-                <h2 class="content-title text-start">
-                  Vous offrir des solutions d’assurance adaptées à vos besoins, avec transparence et engagement. <br> Que vous soyez un particulier ou un professionnel,nous nous engageons à :   
-                </h2>
-                <p class="lead">
-                  ✅ Protéger ce qui compte pour vous : Votre véhicule, votre habitation, votre activité professionnelle.  <br>
-
-                  ✅ Vous proposer des offres sur mesure : Des garanties adaptées à votre situation et à votre budget. <br>
-
-                  ✅ Vous accompagner au quotidien : Un service client réactif et des conseils personnalisés pour vous guider. <br>
-                </p>
-                <p class="mb-5">Assurez-vous en toute confiance et roulez, travaillez, vivez l’esprit tranquille
-                </p>
-                <p>
-                  <a href="#" class="btn-get-started">Voir Nos Produits</a>
-                </p>
-              </div>
-            </div>
+    <section id="about" class="about-section py-5 bg-light">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
             
+            <!-- Galerie image (avec swiper) -->
+            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0" data-aos="fade-left">
+              <div class="swiper init-swiper" aria-label="Galerie photos Jemassur">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "autoplay": { "delay": 5000 },
+                    "slidesPerView": 1,
+                    "pagination": { "el": ".swiper-pagination", "clickable": true }
+                  }
+                </script>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/slidebienvenue (1).jpg" alt="Comparateur assurance Jemassur" class="img-fluid rounded">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/slidebienvenue (2).jpg" alt="Service client réactif Jemassur" class="img-fluid rounded">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/slidebienvenue (3).jpg" alt="Devis rapide Jemassur" class="img-fluid rounded">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/santé.jpg" alt="Mutuelle santé Jemassur" class="img-fluid rounded">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+      
+            <!-- Contenu texte -->
+            <div class="col-lg-5 order-lg-1" data-aos="fade-right">
+              <span class="text-uppercase text-primary fw-bold mb-2 d-block">À propos de Jemassur</span>
+              <h1 class="mb-4 fw-bold h2">Votre Partenaire en Assurance Personnalisée</h1>
+              <p class="lead text-muted">
+                Jemassur vous accompagne pour trouver la meilleure assurance <strong>Auto, VTC, RC Pro, Décennale, Santé, Habitation</strong>. Profitez d’un comparateur efficace, de conseils clairs et d’un service humain.
+              </p>
+              <ul class="list-unstyled mt-4 mb-4">
+                <li>✅ Des garanties adaptées à chaque profil</li>
+                <li>✅ Des tarifs compétitifs négociés avec les meilleures compagnies</li>
+                <li>✅ Un accompagnement réactif et bienveillant</li>
+              </ul>
+              <a href="obtenir-devis.html" class="btn btn-primary btn-lg">
+                🚀 Obtenez un devis gratuit en quelques clics
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section><!-- /About 2 Section -->
+      </section> 
+      <section id="mission" class="about-mission py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0" data-aos="zoom-in">
+              <img src="assets/img/mission.png" alt="Notre mission chez Jemassur" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+              <span class="text-uppercase text-secondary fw-bold mb-2 d-block">Notre Mission</span>
+              <h2 class="fw-bold mb-3">Vous accompagner avec transparence et engagement</h2>
+              <p class="lead">
+                Que vous soyez particulier ou professionnel, notre mission est de :
+              </p>
+              <ul class="list-unstyled mb-4">
+                <li>✅ Protéger ce qui vous est essentiel</li>
+                <li>✅ Vous proposer des garanties sur mesure</li>
+                <li>✅ Rester à vos côtés au quotidien</li>
+              </ul>
+              <p>Assurez votre avenir avec sérénité grâce à Jemassur.</p>
+              <a href="services.html" class="btn btn-outline-primary mt-2">🌟 Voir Nos Offres</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
 <!-- Section Services -->
-<section id="services" class="services section light-background">
-  <div class="container">
-      <div class="row gy-4 justify-content-center">
-
-          <!-- Service 1 : Comparaison Personnalisée -->
-          <div class="col-lg-3">
-              <div class="services-item" data-aos="fade-up">
-                  <div class="services-icon">
-                      <i class="bi bi-funnel"></i> <!-- Icône de filtrage pour la comparaison -->
-                  </div>
-                  <div>
-                      <h3>Comparaison Personnalisée</h3>
-                      <p>Analysez et comparez les meilleures offres d’assurance adaptées à vos besoins en quelques clics.</p>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Service 2 : Devis Gratuit et Instantané -->
-          <div class="col-lg-3">
-              <div class="services-item" data-aos="fade-up" data-aos-delay="100">
-                  <div class="services-icon">
-                      <i class="bi bi-cash-stack"></i> <!-- Icône représentant l'économie financière -->
-                  </div>
-                  <div>
-                      <h3>Devis Gratuit & Instantané</h3>
-                      <p>Obtenez un devis précis et détaillé en temps réel, sans engagement et totalement gratuit.</p>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Service 3 : Accompagnement & Conseils -->
-          <div class="col-lg-3">
-              <div class="services-item" data-aos="fade-up" data-aos-delay="200">
-                  <div class="services-icon">
-                      <i class="bi bi-headset"></i> <!-- Icône représentant un service client -->
-                  </div>
-                  <div>
-                      <h3>Accompagnement & Conseils</h3>
-                      <p>Nos experts vous guident pour trouver la meilleure assurance selon votre profil et budget.</p>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Service 4 : Offres Exclusives -->
-          <div class="col-lg-3">
-              <div class="services-item" data-aos="fade-up" data-aos-delay="300">
-                  <div class="services-icon">
-                      <i class="bi bi-gift"></i> <!-- Icône de cadeau pour les offres spéciales -->
-                  </div>
-                  <div>
-                      <h3>Offres Exclusives</h3>
-                      <p>Profitez de tarifs négociés et d’avantages exclusifs en passant par notre comparateur.</p>
-                  </div>
-              </div>
-          </div>
-
+<section id="services" class="services section py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Nos Engagements</h2>
+        <p class="lead text-muted">Des solutions d’assurance simples, humaines et efficaces pour tous vos besoins</p>
       </div>
-  </div>
-</section>
-<!-- /Section Services -->
+      <div class="row gy-4 justify-content-center">
+  
+        <!-- Service 1 : Devis Rapide & Gratuit -->
+        <div class="col-md-6 col-lg-3">
+          <div class="services-item text-center px-3 py-4 shadow-sm rounded h-100" data-aos="fade-up">
+            <div class="services-icon mb-3 text-primary fs-1">
+              <i class="bi bi-cash-stack"></i>
+            </div>
+            <h3 class="h5 fw-semibold">Devis Rapide & Gratuit</h3>
+            <p class="text-muted small">Recevez un devis clair, sans engagement, adapté à votre situation personnelle.</p>
+          </div>
+        </div>
+  
+        <!-- Service 2 : Conseillers Disponibles -->
+        <div class="col-md-6 col-lg-3">
+          <div class="services-item text-center px-3 py-4 shadow-sm rounded h-100" data-aos="fade-up" data-aos-delay="100">
+            <div class="services-icon mb-3 text-primary fs-1">
+              <i class="bi bi-headset"></i>
+            </div>
+            <h3 class="h5 fw-semibold">Conseillers Disponibles</h3>
+            <p class="text-muted small">Nos experts vous accompagnent à chaque étape, avec réactivité et bienveillance.</p>
+          </div>
+        </div>
+  
+        <!-- Service 3 : Offres Personnalisées -->
+        <div class="col-md-6 col-lg-3">
+          <div class="services-item text-center px-3 py-4 shadow-sm rounded h-100" data-aos="fade-up" data-aos-delay="200">
+            <div class="services-icon mb-3 text-primary fs-1">
+              <i class="bi bi-card-checklist"></i>
+            </div>
+            <h3 class="h5 fw-semibold">Offres Personnalisées</h3>
+            <p class="text-muted small">Des solutions sur mesure en fonction de vos besoins réels et de votre budget.</p>
+          </div>
+        </div>
+  
+        <!-- Service 4 : Souscription Simplifiée -->
+        <div class="col-md-6 col-lg-3">
+          <div class="services-item text-center px-3 py-4 shadow-sm rounded h-100" data-aos="fade-up" data-aos-delay="300">
+            <div class="services-icon mb-3 text-primary fs-1">
+              <i class="bi bi-check-circle"></i>
+            </div>
+            <h3 class="h5 fw-semibold">Souscription Simplifiée</h3>
+            <p class="text-muted small">Souscrivez facilement et rapidement en ligne ou avec l’aide d’un conseiller.</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- /Section Services -->
+  
 
 <!-- Section Pourquoi Nous -->
-<section id="stats" class="stats section light-background">
-  <div class="container">
-      <div class="row gy-4 justify-content-center">
-          <div class="col-lg-5">
-              <div class="images-overlap">
-                  <img src="assets/img/pourquoi_nous.jpg" alt="Assurance" class="img-fluid img-1" data-aos="fade-up">
-              </div>
-          </div>
-
-          <div class="col-lg-4 ps-lg-5">
-              <span class="content-subtitle">Pourquoi Nous ?</span>
-              <h2 class="content-title">Nous mettons votre tranquillité au cœur de nos engagements</h2>
-              <p class="lead">
-                ✅ Des garanties adaptées <br>
-                ✅ Des tarifs compétitifs <br>
-                ✅ Un accompagnement personnalisé <br>
-                ✅ Un service rapide et efficace     </p>
-              <p class="mb-5">
-                Assurez-vous en toute confiance et profitez d’une protection optimale au quotidien avec <strong>Jemassur</strong>   </p>
-
-              <div class="row mb-5 count-numbers">
-                  <!-- Start Stats Item -->
-                  <div class="col-4 counter" data-aos="fade-up" data-aos-delay="100">
-                      <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="1" class="purecounter number"></span>
-                      <span class="d-block">Clients Satisfaits</span>
-                  </div>
-                  <!-- End Stats Item -->
-
-                  <!-- Start Stats Item -->
-                  <div class="col-4 counter" data-aos="fade-up" data-aos-delay="200">
-                      <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter number"></span>
-                      <span class="d-block">Compagnies Partenaires</span>
-                  </div>
-                  <!-- End Stats Item -->
-
-                  <!-- Start Stats Item -->
-                  <div class="col-4 counter" data-aos="fade-up" data-aos-delay="300">
-                      <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="15000" data-purecounter-duration="1" class="purecounter number"></span>
-                      <span class="d-block">Devis Comparés</span>
-                  </div>
-                  <!-- End Stats Item -->
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-<!-- /Section Pourquoi Nous -->
-<!-- Section Nos Assurances -->
-<section id="assurances" class="assurances section light-background">
-  <div class="container">
-      <div class="row gap-x-lg-4 justify-content-between">
-          <div class="col-lg-4 js-custom-dots">
-
-              <!-- Protection Complète -->
-              <a href="#" class="service-item link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
-                  <div class="service-icon color-1 mb-4">
-                      <i class="bi bi-shield-lock"></i>
-                  </div>
-                  <div class="service-contents">
-                      <h3>Protection Complète</h3>
-                      <p>Bénéficiez d'une couverture adaptée à vos besoins, que ce soit pour votre véhicule, votre santé ou votre activité professionnelle.</p>
-                  </div>
-              </a>
-
-              <!-- Tarifs Personnalisés -->
-              <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="100">
-                  <div class="service-icon color-2 mb-4">
-                      <i class="bi bi-cash-coin"></i>
-                  </div>
-                  <div class="service-contents">
-                      <h3>Tarifs Personnalisés</h3>
-                      <p>Des offres ajustées à votre budget, avec des garanties optimisées pour une protection maximale.</p>
-                  </div>
-              </a>
-
-              <!-- Accompagnement Expert -->
-              <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="200">
-                  <div class="service-icon color-3 mb-4">
-                      <i class="bi bi-person-check"></i>
-                  </div>
-                  <div class="service-contents">
-                      <h3>Accompagnement Expert</h3>
-                      <p>Nos conseillers sont à votre écoute pour vous guider et répondre à toutes vos questions.</p>
-                  </div>
-              </a>
-
-              <!-- Souscription Facile -->
-              <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="300">
-                  <div class="service-icon color-4 mb-4">
-                      <i class="bi bi-pencil-square"></i>
-                  </div>
-                  <div class="service-contents">
-                      <h3>Souscription Facile</h3>
-                      <p>Une procédure rapide et simplifiée pour obtenir votre assurance en quelques étapes.</p>
-                  </div>
-              </a>
-          </div>
-
-          <div class="col-lg-8">
-              <div class="swiper init-swiper-tabs">
-                  <script type="application/json" class="swiper-config">
-                      {
-                          "loop": true,
-                          "speed": 600,
-                          "autoHeight": true,
-                          "autoplay": {
-                              "delay": 5000
-                          },
-                          "slidesPerView": "auto",
-                          "pagination": {
-                              "el": ".swiper-pagination",
-                              "type": "bullets",
-                              "clickable": true
-                          },
-                          "breakpoints": {
-                              "320": {
-                                  "slidesPerView": 1,
-                                  "spaceBetween": 40
-                              },
-                              "1200": {
-                                  "slidesPerView": 1,
-                                  "spaceBetween": 1
-                              }
-                          }
-                      }
-                  </script>
-                  <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                          <img src="assets/img/" alt="Protection Complète" class="img-fluid">
-                      </div>
-                      <div class="swiper-slide">
-                          <img src="assets/img/tariflogo.jpg" alt="Tarifs Personnalisés" class="img-fluid">
-                      </div>
-                      <div class="swiper-slide">
-                          <img src="assets/img/conseilspersonalisés.png" alt="Accompagnement Expert" class="img-fluid">
-                      </div>
-                      <div class="swiper-slide">
-                          <img src="assets/img/souscriptionpic.png" alt="Souscription Facile" class="img-fluid">
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-<!-- /Section Nos Assurances -->
-
-
-<!-- Section Services -->
-<section id="services-2" class="services-2 section">
-  <div class="container">
-      <div class="row justify-content-center" data-aos="fade-up">
-          <div class="col-md-6 col-lg-4">
-              <span class="content-subtitle">Nos Services</span>
-              <h2 class="content-title">
-                  Des assurances adaptées à tous vos besoins
-              </h2>
-              <p class="lead">
-                  Jemassur vous accompagne avec des solutions d’assurance sur mesure pour vous protéger au quotidien.
-              </p>
-              <p class="mb-5">
-                  Que vous soyez particulier ou professionnel, nous vous offrons des couvertures complètes et avantageuses.
-              </p>
-              <p>
-                  <a href="#" class="btn btn-get-started">Obtenir un devis</a>
-              </p>
-          </div>
-          <div class="col-md-6 col-lg-6 ps-lg-5">
-              <div class="row">
-                  <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                      <div class="services-item" data-aos="fade-up">
-                          <div class="services-icon">
-                              <i class="bi bi-car-front"></i>
-                          </div>
-                          <div>
-                              <h3>Assurance Auto/Moto</h3>
-                              <p>Protégez votre véhicule avec des garanties adaptées à votre usage.</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                      <div class="services-item" data-aos="fade-up" data-aos-delay="100">
-                          <div class="services-icon">
-                              <i class="bi bi-taxi-front"></i>
-                          </div>
-                          <div>
-                              <h3>Assurance VTC/Taxi</h3>
-                              <p>Des couvertures sur mesure pour les chauffeurs professionnels.</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                      <div class="services-item" data-aos="fade-up" data-aos-delay="200">
-                          <div class="services-icon">
-                              <i class="bi bi-house-door"></i>
-                          </div>
-                          <div>
-                              <h3>Assurance Habitation</h3>
-                              <p>Protégez votre logement et vos biens contre les imprévus.</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-                      <div class="services-item" data-aos="fade-up" data-aos-delay="300">
-                          <div class="services-icon">
-                              <i class="bi bi-tools"></i>
-                          </div>
-                          <div>
-                              <h3>RC Pro & Décennale</h3>
-                              <p>Sécurisez votre activité professionnelle avec une couverture complète.</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-<!-- /Section Services -->
-
-
-
- 
-
-<!-- Faq Section -->
-<section id="faq" class="faq section">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <p>Assurances</p>
-    <h2>Questions Fréquentes</h2>
-  </div>
-  <!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up">
-    <div class="row">
-      <div class="col-12">
-        <div class="custom-accordion" id="accordion-faq">
-
-          <!-- Question 1 -->
-          <div class="accordion-item">
-            <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1">
-                Pourquoi souscrire une assurance auto/moto ?
-              </button>
-            </h2>
-            <div id="collapse-faq-1" class="collapse show" data-parent="#accordion-faq">
-              <div class="accordion-body">
-                L'assurance auto/moto est obligatoire et vous protège en cas d'accident, de vol ou de dommages matériels. 
-                Elle couvre également la responsabilité civile, essentielle pour indemniser les tiers en cas de sinistre.
-              </div>
-            </div>
-          </div>
-          <!-- .accordion-item -->
-
-          <!-- Question 2 -->
-          <div class="accordion-item">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-2">
-                Quelles sont les garanties essentielles d’une assurance habitation ?
-              </button>
-            </h2>
-            <div id="collapse-faq-2" class="collapse" data-parent="#accordion-faq">
-              <div class="accordion-body">
-                Une assurance habitation couvre généralement les dommages causés par un incendie, un dégât des eaux, un vol 
-                ou encore des catastrophes naturelles. Elle peut également inclure une responsabilité civile pour protéger 
-                vos proches et vos biens.
-              </div>
-            </div>
-          </div>
-          <!-- .accordion-item -->
-
-          <!-- Question 3 -->
-          <div class="accordion-item">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-3">
-                Qui doit souscrire une assurance décennale ?
-              </button>
-            </h2>
-            <div id="collapse-faq-3" class="collapse" data-parent="#accordion-faq">
-              <div class="accordion-body">
-                Tous les professionnels du bâtiment (maçons, électriciens, plombiers, etc.) doivent souscrire une assurance 
-                décennale pour couvrir les dommages pouvant affecter la solidité de l’ouvrage pendant 10 ans après la livraison.
-              </div>
-            </div>
-          </div>
-          <!-- .accordion-item -->
-
-          <!-- Question 4 -->
-          <div class="accordion-item">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-4">
-                L’assurance VTC/Taxi est-elle obligatoire ?
-              </button>
-            </h2>
-            <div id="collapse-faq-4" class="collapse" data-parent="#accordion-faq">
-              <div class="accordion-body">
-                Oui, les chauffeurs VTC et taxis doivent souscrire une assurance spécifique qui couvre les risques liés au transport de passagers, 
-                incluant la responsabilité civile professionnelle et les dommages au véhicule.
-              </div>
-            </div>
-          </div>
-          <!-- .accordion-item -->
-
-          <!-- Question 5 -->
-          <div class="accordion-item">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-5">
-                Pourquoi prendre une assurance responsabilité civile professionnelle (RC Pro) ?
-              </button>
-            </h2>
-            <div id="collapse-faq-5" class="collapse" data-parent="#accordion-faq">
-              <div class="accordion-body">
-                L'assurance RC Pro protège votre entreprise en cas de dommages causés à des tiers dans le cadre de votre activité. 
-                Elle est fortement recommandée, voire obligatoire, selon votre profession.
-              </div>
-            </div>
-          </div>
-          <!-- .accordion-item -->
-
+<section id="pourquoi-nous" class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        
+        <!-- Image illustrant la confiance -->
+        <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-up">
+          <img src="assets/img/pourquoi_nous.jpg" alt="Confiance en Jemassur" class="img-fluid rounded shadow">
+        </div>
+  
+        <!-- Contenu texte -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <h2 class="fw-bold mb-3">Pourquoi choisir Jemassur&nbsp;?</h2>
+          <p class="lead text-muted">
+            Chez Jemassur, votre tranquillité est notre priorité. Nous mettons l’humain, la clarté et la réactivité au cœur de notre service.
+          </p>
+          <ul class="list-unstyled mb-4">
+            <li>✅ Conseillers disponibles et à l’écoute</li>
+            <li>✅ Tarifs négociés avec les meilleurs assureurs</li>
+            <li>✅ Garanties personnalisées selon votre profil</li>
+            <li>✅ Démarches simplifiées et rapides</li>
+          </ul>
+          <a href="obtenir-devis.html" class="btn btn-primary btn-lg">
+            🌟 Demander un devis maintenant
+          </a>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- /Faq Section -->
-
-
-<!-- Testimonials Section -->
-<section id="testimonials" class="testimonials section">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-      <p>Nos Clients Satisfaits</p>
-      <h2>Ils Ont Trouvé La Meilleure Assurance</h2>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up">
-      <div class="row justify-content-center">
-          <div class="col-lg-7">
-              <div class="swiper init-swiper">
-                  <script type="application/json" class="swiper-config">
-                      {
-                          "loop": true,
-                          "speed": 600,
-                          "autoplay": {
-                              "delay": 5000
-                          },
-                          "slidesPerView": "auto",
-                          "pagination": {
-                              "el": ".swiper-pagination",
-                              "type": "bullets",
-                              "clickable": true
-                          },
-                          "breakpoints": {
-                              "320": {
-                                  "slidesPerView": 1,
-                                  "spaceBetween": 40
-                              },
-                              "1200": {
-                                  "slidesPerView": 1,
-                                  "spaceBetween": 1
-                              }
-                          }
-                      }
-                  </script>
-                  <div class="swiper-wrapper">
-
-                      <!-- Témoignage 1 -->
-                      <div class="swiper-slide">
-                          <div class="testimonial mx-auto">
-                              <figure class="img-wrap">
-                                  <img src="assets/img/testimonials/testimonials-1.jpg" alt="Image" class="img-fluid">
-                              </figure>
-                              <h3 class="name">Sophie Lambert</h3>
-                              <blockquote>
-                                  <p>
-                                      “Grâce à ce comparateur, j’ai trouvé une assurance auto 30% moins chère avec de meilleures garanties ! Simple et efficace, je recommande.”
-                                  </p>
-                              </blockquote>
-                          </div>
-                      </div>
-
-                      <!-- Témoignage 2 -->
-                      <div class="swiper-slide">
-                          <div class="testimonial mx-auto">
-                              <figure class="img-wrap">
-                                  <img src="assets/img/testimonials/testimonials-2.jpg" alt="Image" class="img-fluid">
-                              </figure>
-                              <h3 class="name">Marc Dubois</h3>
-                              <blockquote>
-                                  <p>
-                                      “J’avais du mal à choisir une assurance habitation. En quelques clics, j’ai pu comparer et économiser 120€ par an !”
-                                  </p>
-                              </blockquote>
-                          </div>
-                      </div>
-
-                      <!-- Témoignage 3 -->
-                      <div class="swiper-slide">
-                          <div class="testimonial mx-auto">
-                              <figure class="img-wrap">
-                                  <img src="assets/img/testimonials/testimonials-3.jpg" alt="Image" class="img-fluid">
-                              </figure>
-                              <h3 class="name">Nadia Benomar</h3>
-                              <blockquote>
-                                  <p>
-                                      “Un service rapide et transparent ! J’ai souscrit une mutuelle santé en moins de 10 minutes, et à un prix défiant toute concurrence.”
-                                  </p>
-                              </blockquote>
-                          </div>
-                      </div>
-
-                      <!-- Témoignage 4 -->
-                      <div class="swiper-slide">
-                          <div class="testimonial mx-auto">
-                              <figure class="img-wrap">
-                                  <img src="assets/img/testimonials/testimonials-4.jpg" alt="Image" class="img-fluid">
-                              </figure>
-                              <h3 class="name">Julien Moreau</h3>
-                              <blockquote>
-                                  <p>
-                                      “Je ne pensais pas changer d’assurance moto, mais après une comparaison, j’ai trouvé une offre 20% moins chère pour les mêmes garanties.”
-                                  </p>
-                              </blockquote>
-                          </div>
-                      </div>
-
-                      <!-- Témoignage 5 -->
-                      <div class="swiper-slide">
-                          <div class="testimonial mx-auto">
-                              <figure class="img-wrap">
-                                  <img src="assets/img/testimonials/testimonials-5.jpg" alt="Image" class="img-fluid">
-                              </figure>
-                              <h3 class="name">Laura Perrin</h3>
-                              <blockquote>
-                                  <p>
-                                      “Équipe très réactive et site intuitif ! J’ai trouvé mon assurance voyage en quelques minutes, et j’ai économisé 40% par rapport à mon ancienne offre.”
-                                  </p>
-                              </blockquote>
-                          </div>
-                      </div>
-
-                  </div>
-                  <div class="swiper-pagination"></div>
-              </div>
-          </div>
+  </section>
+  
+<!-- Section Nos Assurances -->
+<section id="assurances" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Nos Assurances</h2>
+        <p class="lead text-muted">Des solutions complètes et accessibles pour chaque besoin</p>
       </div>
-  </div>
-</section>
-<!-- /Testimonials Section -->
+  
+      <div class="row gy-4">
+        <!-- Protection Complète -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <div class="text-center bg-white rounded shadow-sm p-4 h-100">
+            <div class="mb-3 fs-1 text-primary">
+              <i class="bi bi-shield-lock"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Protection Complète</h5>
+            <p class="text-muted small">Pour votre véhicule, votre logement, ou votre santé, soyez couvert en toute sérénité.</p>
+          </div>
+        </div>
+  
+        <!-- Tarifs Personnalisés -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-center bg-white rounded shadow-sm p-4 h-100">
+            <div class="mb-3 fs-1 text-success">
+              <i class="bi bi-cash-coin"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Tarifs Personnalisés</h5>
+            <p class="text-muted small">Nous adaptons chaque offre à votre budget et à votre situation personnelle.</p>
+          </div>
+        </div>
+  
+        <!-- Accompagnement Expert -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-center bg-white rounded shadow-sm p-4 h-100">
+            <div class="mb-3 fs-1 text-info">
+              <i class="bi bi-person-check"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Conseils d’Experts</h5>
+            <p class="text-muted small">Nos conseillers sont là pour vous guider avec expertise et bienveillance.</p>
+          </div>
+        </div>
+  
+        <!-- Souscription Facile -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-center bg-white rounded shadow-sm p-4 h-100">
+            <div class="mb-3 fs-1 text-warning">
+              <i class="bi bi-pencil-square"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Souscription Facile</h5>
+            <p class="text-muted small">Faites vos démarches simplement, en ligne ou avec un conseiller dédié.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Section Services (Refondue & Optimisée) -->
+<section id="services" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        
+        <!-- Texte introductif -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <span class="text-uppercase text-primary fw-bold small">Nos Services</span>
+          <h2 class="fw-bold mt-2 mb-4">Des assurances sur mesure pour tous vos besoins</h2>
+          <p class="text-muted lead mb-3">
+            Que vous soyez particulier ou professionnel, Jemassur vous propose des solutions fiables et personnalisées, adaptées à votre quotidien.
+          </p>
+          <p class="mb-4 text-muted">
+            Nos experts vous accompagnent à chaque étape pour garantir votre tranquillité, avec des tarifs compétitifs et un service humain et réactif.
+          </p>
+          <a href="obtenir-devis.html" class="btn btn-primary btn-lg">
+            📄 Obtenir un devis gratuit
+          </a>
+        </div>
+  
+        <!-- Cartes de services -->
+        <div class="col-lg-7">
+          <div class="row gy-4">
+            
+            <!-- Auto/Moto -->
+            <div class="col-sm-6" data-aos="fade-up">
+              <div class="bg-white shadow-sm p-4 rounded h-100 text-center">
+                <div class="text-primary fs-1 mb-3"><i class="bi bi-car-front"></i></div>
+                <h5 class="fw-bold mb-2">Assurance Auto & Moto</h5>
+                <p class="text-muted small">Protégez votre véhicule contre les risques du quotidien avec des garanties flexibles.</p>
+              </div>
+            </div>
+  
+            <!-- VTC / Taxi -->
+            <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="bg-white shadow-sm p-4 rounded h-100 text-center">
+                <div class="text-warning fs-1 mb-3"><i class="bi bi-taxi-front"></i></div>
+                <h5 class="fw-bold mb-2">Assurance VTC / Taxi</h5>
+                <p class="text-muted small">Des formules dédiées aux chauffeurs professionnels, conformes aux exigences légales.</p>
+              </div>
+            </div>
+  
+            <!-- Habitation -->
+            <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="bg-white shadow-sm p-4 rounded h-100 text-center">
+                <div class="text-success fs-1 mb-3"><i class="bi bi-house-door"></i></div>
+                <h5 class="fw-bold mb-2">Assurance Habitation</h5>
+                <p class="text-muted small">Couvrez votre logement, vos biens, et votre responsabilité civile avec des garanties claires.</p>
+              </div>
+            </div>
+  
+            <!-- RC Pro & Décennale -->
+            <div class="col-sm-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="bg-white shadow-sm p-4 rounded h-100 text-center">
+                <div class="text-danger fs-1 mb-3"><i class="bi bi-tools"></i></div>
+                <h5 class="fw-bold mb-2">RC Pro & Décennale</h5>
+                <p class="text-muted small">Assurez votre activité avec une couverture complète et conforme aux obligations professionnelles.</p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+ 
+
+<!-- Section FAQ (refondue & optimisée) -->
+<section id="faq" class="py-5 bg-white">
+    <div class="container">
+      
+      <!-- Titre de section -->
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="text-uppercase text-primary fw-bold small">Assurances</span>
+        <h2 class="fw-bold mt-2">Questions fréquentes</h2>
+        <p class="text-muted">Retrouvez ici les réponses aux questions que vous vous posez le plus souvent.</p>
+      </div>
+  
+      <!-- Accordéon -->
+      <div class="accordion accordion-flush" id="accordionFAQ" data-aos="fade-up">
+  
+        <!-- Question 1 -->
+        <div class="accordion-item border-bottom">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Pourquoi souscrire une assurance auto/moto ?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body text-muted">
+              L'assurance auto/moto est obligatoire en France. Elle vous protège contre les accidents, le vol, ou les dommages, tout en couvrant la responsabilité civile en cas de sinistre causé à un tiers.
+            </div>
+          </div>
+        </div>
+  
+        <!-- Question 2 -->
+        <div class="accordion-item border-bottom">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Quelles sont les garanties essentielles d’une assurance habitation ?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body text-muted">
+              Elle couvre généralement les incendies, dégâts des eaux, vols, catastrophes naturelles, et peut inclure une garantie responsabilité civile pour vous protéger en cas de dommages causés à autrui.
+            </div>
+          </div>
+        </div>
+  
+        <!-- Question 3 -->
+        <div class="accordion-item border-bottom">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              Qui doit souscrire une assurance décennale ?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body text-muted">
+              Tous les professionnels du bâtiment (maçons, électriciens, plombiers, etc.) sont légalement tenus de souscrire une assurance décennale couvrant les dommages graves pendant 10 ans après la livraison d’un chantier.
+            </div>
+          </div>
+        </div>
+  
+        <!-- Question 4 -->
+        <div class="accordion-item border-bottom">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+              L’assurance VTC/Taxi est-elle obligatoire ?
+            </button>
+          </h2>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body text-muted">
+              Oui, une assurance spécifique est requise pour les chauffeurs VTC ou taxis. Elle couvre les passagers transportés, la responsabilité civile professionnelle, ainsi que les dommages au véhicule.
+            </div>
+          </div>
+        </div>
+  
+        <!-- Question 5 -->
+        <div class="accordion-item border-bottom">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+              Pourquoi prendre une assurance responsabilité civile professionnelle (RC Pro) ?
+            </button>
+          </h2>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body text-muted">
+              La RC Pro protège votre activité en cas de dommages matériels, immatériels ou corporels causés à des tiers dans le cadre de votre travail. Elle est indispensable dans de nombreuses professions.
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+<section id="testimonials" class="testimonials bg-light py-5">
+    <div class="container">
+      <!-- Titre SEO friendly -->
+      <div class="text-center mb-5" data-aos="fade-up">
+        <p class="text-primary text-uppercase fw-bold mb-2">Témoignages Clients</p>
+        <h2 class="h1 fw-bold">Pourquoi Nos Clients Recommandent Jemassur</h2>
+        <p class="text-muted">Découvrez les expériences réelles de ceux qui ont trouvé la meilleure couverture pour leurs besoins.</p>
+      </div>
+  
+      <!-- Témoignages en grille responsive -->
+      <div class="row g-4" data-aos="fade-up">
+        <!-- Exemple de témoignage -->
+        <div class="col-md-6 col-lg-4">
+          <div class="testimonial p-4 bg-white shadow rounded h-100">
+            <div class="d-flex align-items-center mb-3">
+              <img src="assets/img/testimonials/testimonials-1.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+              <div>
+                <h5 class="mb-0">Sophie Lambert</h5>
+                <small class="text-muted">Assurance Auto</small>
+              </div>
+            </div>
+            <blockquote class="mb-0 fst-italic text-dark">
+              “Grâce à Jemassur, j’ai trouvé une assurance auto 30% moins chère avec de meilleures garanties ! Je recommande.”
+            </blockquote>
+          </div>
+        </div>
+  
+        <!-- Répéter les cartes pour les 15 témoignages -->
+        <div class="col-md-6 col-lg-4">
+            <div class="testimonial p-4 bg-white shadow rounded h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/img/testimonials/testimonials-2.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0">Marc Dubois	</h5>
+                  <small class="text-muted">Assurance Habitation</small>
+                </div>
+              </div>
+              <blockquote class="mb-0 fst-italic text-dark">
+                	“J’avais du mal à choisir une assurance habitation. J’ai économisé 120€/an en quelques clics.”           </blockquote>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial p-4 bg-white shadow rounded h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/img/testimonials/testimonials-3.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0"> Nadia Benomar	</h5>
+                  <small class="text-muted">Mutuelle Santé</small>
+                </div>
+              </div>
+              <blockquote class="mb-0 fst-italic text-dark">
+               	“Service rapide et transparent ! J’ai souscrit une mutuelle en moins de 10 minutes.”              </blockquote>
+            </div>
+          </div>
+         
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial p-4 bg-white shadow rounded h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0"> Julien Moreau</h5>
+                  <small class="text-muted"> Assurance Moto</small>
+                </div>
+              </div>
+              <blockquote class="mb-0 fst-italic text-dark">
+              	“J’ai trouvé une offre 20% moins chère pour mon assurance moto avec les mêmes garanties.”              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial p-4 bg-white shadow rounded h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0"> Jean-Michel</h5>
+                  <small class="text-muted"> Assurance Rc Pro</small>
+                </div>
+              </div>
+              <blockquote class="mb-0 fst-italic text-dark">
+                “En tant que PME, je suis couvert contre tous les risques de mon activité.”     </blockquote>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial p-4 bg-white shadow rounded h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0"> Inès Rahmani</h5>
+                  <small class="text-muted"> Auto Jeune conducteur</small>
+                </div>
+              </div>
+              <blockquote class="mb-0 fst-italic text-dark">
+                		“J’avais peur des prix en tant que jeune conducteur, mais Jemassur m’a trouvé une offre abordable.”   </blockquote>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial p-4 bg-white shadow rounded h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0"> Thomas Bernard</h5>
+                  <small class="text-muted"> Assurance Taxi</small>
+                </div>
+              </div>
+              <blockquote class="mb-0 fst-italic text-dark">
+                		“Une couverture parfaite pour mon activité de taxi. Le service client est au top !”      </blockquote>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial p-4 bg-white shadow rounded h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0"> Hugo Poivre</h5>
+                  <small class="text-muted"> Mutuelle Senior</small>
+                </div>
+              </div>
+              <blockquote class="mb-0 fst-italic text-dark">
+                	“Enfin une mutuelle senior adaptée à mes besoins ! Merci Jemassur pour les conseils personnalisés.”    </blockquote>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial p-4 bg-white shadow rounded h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0">  Élise Garnier</h5>
+                  <small class="text-muted"> Assurance RC Pro</small>
+                </div>
+              </div>
+              <blockquote class="mb-0 fst-italic text-dark">
+               		“J’ai économisé 180€ par an sur ma responsabilité civile professionnelle, sans compromis.” </blockquote>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial p-4 bg-white shadow rounded h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0"> Stéphane Lemoine</h5>
+                  <small class="text-muted"> Assurance Décennale</small>
+                </div>
+              </div>
+              <blockquote class="mb-0 fst-italic text-dark">
+                		“En tant qu’artisan, j’ai été conseillé et assuré très rapidement pour ma décennale.”             </blockquote>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial p-4 bg-white shadow rounded h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0">  Élise Garnier</h5>
+                  <small class="text-muted"> Assurance RC Pro</small>
+                </div>
+              </div>
+              <blockquote class="mb-0 fst-italic text-dark">
+               		“J’ai économisé 180€ par an sur ma responsabilité civile professionnelle, sans compromis.”             </blockquote>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial p-4 bg-white shadow rounded h-100">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0">  Karim Aït</h5>
+                  <small class="text-muted"> Assurance VTC</small>
+                </div>
+              </div>
+              <blockquote class="mb-0 fst-italic text-dark">
+               		“En tant que chauffeur VTC, j’ai trouvé la meilleure RC Pro avec Jemassur. Rapide et fiable.”            </blockquote>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+  
 
 
   </main>

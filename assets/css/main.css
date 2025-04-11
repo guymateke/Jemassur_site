@@ -1520,186 +1520,51 @@ i {
 }
 
 
-    /* Style général du Hero */
-    #hero {
-        position: relative;
-        height: 100vh;
-        overflow: hidden;
-    }
-
-    .swiper-slide {
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: white;
-        padding: 50px 20px;
-        height: 100vh;
-    }
-
-    /* Styles des boutons */
-    .hero-actions {
-        margin-top: 20px;
-    }
-
-    .hero-actions button {
-        margin: 5px;
-        padding: 10px 20px;
-        font-size: 16px;
-        transition: 0.3s;
-    }
-
-    .btn-primary:hover {
-        background-color: #0056b3;
-        transform: scale(1.05);
-    }
-
-    .btn-secondary:hover {
-        background-color: #333;
-        transform: scale(1.05);
-    }
-
-    /* Bouton devis */
-    .btn-devis {
-        font-size: 18px;
-        background-color: rgba(255, 255, 255, 0.8);
-        color: #333;
-        padding: 12px 25px;
-        border-radius: 25px;
-        transition: 0.3s ease-in-out;
-    }
-
-    .btn-devis:hover {
-        background-color: white;
-        transform: scale(1.1);
-    }
-
-    /* Effets d'animation */
-    .animate__animated {
-        animation-duration: 1s;
-    }
-/* produits */
-    .produit-item {
-      text-align: center;
-      position: relative;
-    }
-    
-    .produit-img {
-      position: relative;
-      overflow: hidden;
-      border-radius: 10px;
-    }
-    
-    .produit-img img {
-      width: 100%;
-      transition: 0.3s ease-in-out;
-    }
-    
-    .produit-hover {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      transition: 0.3s ease-in-out;
-    }
-    
-    .produit-img:hover img {
-      filter: blur(3px);
-    }
-    
-    .produit-img:hover .produit-hover {
-      opacity: 1;
-    }
-    
-    .produit-hover .btn {
-      margin-top: 10px;
-    }
-    
-    .assurance-item {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .assurance-item:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-
-
-/* En-tête */
-#header {
-    background: #ffffff;
-    padding: 10px 0;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-
-
-.sitename {
-    color: #22199a;
-    font-weight: bold;
-    font-size: 2.8rem;
-    margin-left: 10px;
-}
-
-/* HERO - Organisation en deux colonnes */
 #hero {
-    display: flex;
-    height: 90vh;
-    gap: 0;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-/* Bloc flottant fixe à gauche */
 .floating-box {
-    width: 35%;
-    background: white;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 35%;
+  background: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Swiper Slider */
 .swiper {
-    width: 65%;
-    height: 100%;
+  width: 65%;
+  height: 100%;
 }
 
 .swiper-slide {
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
-/* Boutons */
-.btn-primary {
-    background-color: #002D72;
-    border: none;
-    font-weight: bold;
-}
-
-.btn-primary:hover {
-    background-color: #0049B7;
-}
-
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 992px) {
-    #hero {
-        flex-direction: column;
-        height: auto;
-    }
+  #hero {
+    flex-direction: column;
+    height: auto;
+  }
 
-    .floating-box, .swiper {
-        width: 100%;
-        padding: 20px;
-    }
+  .floating-box,
+  .swiper {
+    width: 100%;
+    height: auto;
+  }
 
+  .swiper-slide {
+    height: 300px;
+  }
 }
