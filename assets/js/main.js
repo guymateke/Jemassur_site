@@ -224,3 +224,24 @@
             effect: "fade"
         });
     });
+
+    // **************consentement*****************
+  document.addEventListener('DOMContentLoaded', function () {
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('accept-cookies');
+    const refuseBtn = document.getElementById('refuse-cookies');
+
+    if (!localStorage.getItem('jemassur_cookies_choice')) {
+      banner.style.display = 'block';
+    }
+
+    acceptBtn.addEventListener('click', () => {
+      localStorage.setItem('jemassur_cookies_choice', 'accepted');
+      banner.style.display = 'none';
+    });
+
+    refuseBtn.addEventListener('click', () => {
+      localStorage.setItem('jemassur_cookies_choice', 'refused');
+      banner.style.display = 'none';
+    });
+  });
