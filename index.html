@@ -84,8 +84,8 @@
     <header id="header" class="header d-flex align-items-center sticky-top"> 
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo d-flex align-items-center">
-                <!-- <img src="assets/img/ICONE.png" alt="JEMASSUR" class="logo-img" loading="lazy"> -->
-                <h2 class="sitename">JEmassur</h2>
+                <img src="assets/img/logo.png" alt="JEMASSUR" class="logo-img" loading="lazy">
+                <!-- <h2 class="sitename">JEmassur</h2> -->
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul>
@@ -103,7 +103,7 @@
 <!-- Section Hero -->
 <section id="hero" class="d-flex flex-wrap">
     <div class="floating-box">
-      <h2 class="text-primary">Nous négocions des tarifs préférentiels pour vous !</h2>
+      <h2 class="text-primary">Nous vous accompagnons pour trouver la meilleure assurance au meilleur prix</h2>
       <div class="mb-3">
         <label for="simulation" class="form-label">Je veux faire une simulation :</label>
         <select id="simulation" class="form-select">
@@ -762,186 +762,151 @@
     </div>
   </section>
   
-<section id="testimonials" class="testimonials bg-light py-5">
+  <section id="testimonials" class="testimonials bg-light py-5 overflow-hidden">
     <div class="container">
-      <!-- Titre SEO friendly -->
+      <!-- Titre -->
       <div class="text-center mb-5" data-aos="fade-up">
         <p class="text-primary text-uppercase fw-bold mb-2">Témoignages Clients</p>
         <h2 class="h1 fw-bold">Pourquoi Nos Clients Recommandent Jemassur</h2>
         <p class="text-muted">Découvrez les expériences réelles de ceux qui ont trouvé la meilleure couverture pour leurs besoins.</p>
       </div>
   
-      <!-- Témoignages en grille responsive -->
-      <div class="row g-4" data-aos="fade-up">
-        <!-- Exemple de témoignage -->
-        <div class="col-md-6 col-lg-4">
-          <div class="testimonial p-4 bg-white shadow rounded h-100">
-            <div class="d-flex align-items-center mb-3">
-              <img src="assets/img/testimonials/testimonials-1.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
-              <div>
-                <h5 class="mb-0">Anaelle Beraca</h5>
-                <small class="text-muted">Assurance Auto</small>
-              </div>
-            </div>
-            <blockquote class="mb-0 fst-italic text-dark">
-              “Grâce à Jemassur, j’ai trouvé une assurance auto 30% moins chère avec de meilleures garanties ! Je recommande.”
-            </blockquote>
+      <!-- Bande défilante -->
+      <div class="testimonial-slider">
+        <div class="slider-track">
+          
+          <!-- Répéter les cartes témoignage -->
+          <div class="testimonial-card">
+            <img src="assets/img/testimonials/testimonials-1.jpg" alt="Anaelle Beraca" class="rounded-circle" width="60" height="60">
+            <h5>Anaelle Beraca</h5>
+            <small>Assurance Auto</small>
+            <p>“J’ai trouvé une assurance auto 30% moins chère avec de meilleures garanties !”</p>
           </div>
-        </div>
   
-        <!-- Répéter les cartes pour les 15 témoignages -->
-        <div class="col-md-6 col-lg-4">
-            <div class="testimonial p-4 bg-white shadow rounded h-100">
-              <div class="d-flex align-items-center mb-3">
-                <img src="assets/img/testimonials/testimonials-2.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
-                <div>
-                  <h5 class="mb-0">Marc Dubois	</h5>
-                  <small class="text-muted">Assurance Habitation</small>
-                </div>
-              </div>
-              <blockquote class="mb-0 fst-italic text-dark">
-                	“J’avais du mal à choisir une assurance habitation. J’ai économisé 120€/an en quelques clics.”           </blockquote>
-            </div>
+          <div class="testimonial-card">
+            <img src="assets/img/testimonials/testimonials-2.jpeg" alt="Marc Dubois" class="rounded-circle" width="60" height="60">
+            <h5>Marc Dubois</h5>
+            <small>Assurance Habitation</small>
+            <p>“J’ai économisé 120€/an en quelques clics.”</p>
           </div>
 
-
-          <div class="col-md-6 col-lg-4">
-            <div class="testimonial p-4 bg-white shadow rounded h-100">
-              <div class="d-flex align-items-center mb-3">
-                <img src="assets/img/testimonials/testimonials-3.jpg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
-                <div>
-                  <h5 class="mb-0"> Nadia Benomar	</h5>
-                  <small class="text-muted">Mutuelle Santé</small>
-                </div>
-              </div>
-              <blockquote class="mb-0 fst-italic text-dark">
-               	“Service rapide et transparent ! J’ai souscrit une mutuelle en moins de 10 minutes.”              </blockquote>
-            </div>
+          <div class="testimonial-card">
+            <img src="assets/img/testimonials/testimonials-3.jpg" alt="Marc Dubois" class="rounded-circle" width="60" height="60">
+            <h5>Nadia Benomar</h5>
+            <small>Mutuelle Santé</small>
+            <p>“Service rapide et transparent!j'ai souscrit une mutuelle en moins de 10 minutes.”</p>
           </div>
-         
-          <div class="col-md-6 col-lg-4">
-            <div class="testimonial p-4 bg-white shadow rounded h-100">
-              <div class="d-flex align-items-center mb-3">
+  
+          <!-- Ajoute autant de témoignages que tu veux ici... -->
+          
+            <div class="testimonial-card">
                 <img src="assets/img/testimonials/testimonials-4.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
                 <div>
-                  <h5 class="mb-0"> Julien Moreau</h5>
-                  <small class="text-muted"> Assurance Moto</small>
+                  <h5> Julien Moreau</h5>
+                  <small> Assurance Moto</small>
+                  <p>“J’ai trouvé une offre 20% moins chère pour mon assurance moto avec les mêmes garanties.” </p>
                 </div>
               </div>
-              <blockquote class="mb-0 fst-italic text-dark">
-              	“J’ai trouvé une offre 20% moins chère pour mon assurance moto avec les mêmes garanties.”              </blockquote>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="testimonial p-4 bg-white shadow rounded h-100">
-              <div class="d-flex align-items-center mb-3">
-                <img src="assets/img/testimonials/testimonials-6.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
-                <div>
-                  <h5 class="mb-0"> Jean-Michel</h5>
-                  <small class="text-muted"> Assurance Rc Pro</small>
-                </div>
-              </div>
-              <blockquote class="mb-0 fst-italic text-dark">
-                “En tant que PME, je suis couvert contre tous les risques de mon activité.”     </blockquote>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="testimonial p-4 bg-white shadow rounded h-100">
-              <div class="d-flex align-items-center mb-3">
-                <img src="assets/img/testimonials/testimonials-5.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
-                <div>
-                  <h5 class="mb-0"> Inès Rahmani</h5>
-                  <small class="text-muted"> Auto Jeune conducteur</small>
-                </div>
-              </div>
-              <blockquote class="mb-0 fst-italic text-dark">
-                		“J’avais peur des prix en tant que jeune conducteur, mais Jemassur m’a trouvé une offre abordable.”   </blockquote>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="testimonial p-4 bg-white shadow rounded h-100">
-              <div class="d-flex align-items-center mb-3">
-                <img src="assets/img/testimonials/testimonials-9.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
-                <div>
-                  <h5 class="mb-0"> Thomas Bernard</h5>
-                  <small class="text-muted"> Assurance Taxi</small>
-                </div>
-              </div>
-              <blockquote class="mb-0 fst-italic text-dark">
-                		“Une couverture parfaite pour mon activité de taxi. Le service client est au top !”      </blockquote>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="testimonial p-4 bg-white shadow rounded h-100">
-              <div class="d-flex align-items-center mb-3">
-                <img src="assets/img/testimonials/testimonials-10.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
-                <div>
-                  <h5 class="mb-0"> Hugo Poivre</h5>
-                  <small class="text-muted"> Mutuelle Senior</small>
-                </div>
-              </div>
-              <blockquote class="mb-0 fst-italic text-dark">
-                	“Enfin une mutuelle senior adaptée à mes besoins ! Merci Jemassur pour les conseils personnalisés.”    </blockquote>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="testimonial p-4 bg-white shadow rounded h-100">
-              <div class="d-flex align-items-center mb-3">
-                <img src="assets/img/testimonials/testimonials-11.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
-                <div>
-                  <h5 class="mb-0">  Élise Garnier</h5>
-                  <small class="text-muted"> Assurance RC Pro</small>
-                </div>
-              </div>
-              <blockquote class="mb-0 fst-italic text-dark">
-               		“J’ai économisé 180€ par an sur ma responsabilité civile professionnelle, sans compromis.” </blockquote>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="testimonial p-4 bg-white shadow rounded h-100">
-              <div class="d-flex align-items-center mb-3">
-                <img src="assets/img/testimonials/testimonials-8.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
-                <div>
-                  <h5 class="mb-0"> Stéphane Lemoine</h5>
-                  <small class="text-muted"> Assurance Décennale</small>
-                </div>
-              </div>
-              <blockquote class="mb-0 fst-italic text-dark">
-                		“En tant qu’artisan, j’ai été conseillé et assuré très rapidement pour ma décennale.”             </blockquote>
-            </div>
-          </div>
-          
-          <div class="col-md-6 col-lg-4">
-            <div class="testimonial p-4 bg-white shadow rounded h-100">
-              <div class="d-flex align-items-center mb-3">
-                <img src="assets/img/testimonials/testimonials-7.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
-                <div>
-                  <h5 class="mb-0">  Karim Aït</h5>
-                  <small class="text-muted"> Assurance VTC</small>
-                </div>
-              </div>
-              <blockquote class="mb-0 fst-italic text-dark">
-               		“En tant que chauffeur VTC, j’ai trouvé la meilleure RC Pro avec Jemassur. Rapide et fiable.”            </blockquote>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-lg-4">
-            <div class="testimonial p-4 bg-white shadow rounded h-100">
-              <div class="d-flex align-items-center mb-3">
+              <div class="testimonial-card">
+                <img src="assets/img/testimonials/testimonials-6.jpeg" alt="JEAN-MICHEL" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5> JEAN-MICHEL</h5>
+                  <small> Assurance RC PRO</small>
+                  <p>“En tant que PME,je suis couvert contre tous les risques de mon activité” </p>
+                </div>
+              </div>
+              <div class="testimonial-card">
                 <img src="assets/img/testimonials/testimonials-12.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
                 <div>
-                  <h5 class="mb-0"> Chancelle Constante</h5>
-                  <small class="text-muted"> Mutuelle Santé   </small>
+                  <h5> Chancelle Constante</h5>
+                  <small> Mutuelle Santé</small>
+                  <p> “Non seulement j’ai pu avoir la complementaire Santé selon mon budget avec toutes les garanties j'ai également l'assurance d'avoir toujours quelqu'un au bout du fil avec ce service client tellement professionnel.”</p>
                 </div>
               </div>
-              <blockquote class="mb-0 fst-italic text-dark">
-               		“Non seulement j’ai pu avoir la complementaire Santé selon mon budget avec toutes les garanties j'ai également l'assurance d'avoir toujours quelqu'un au bout du fil avec ce service client tellement professionnel.” </blockquote>
-            </div>
-          </div>
 
+              <div class="testimonial-card">
+                <img src="assets/img/testimonials/testimonials-5.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5>Inès Rahmani</h5>
+                  <small> Auto Jeune conducteur</small>
+                  <p>“J'avais peur des prix en tant que jeune conducteur,mais Jemassur m'a trouvé une offre abordable.” </p>
+                </div>
+              </div>
+              
+              <div class="testimonial-card">
+                <img src="assets/img/testimonials/testimonials-1.jpg" alt="Anaelle Beraca" class="rounded-circle" width="60" height="60">
+                <h5>Anaelle Beraca</h5>
+                <small>Assurance Auto</small>
+                <p>“J’ai trouvé une assurance auto 30% moins chère avec de meilleures garanties !”</p>
+              </div>
+      
+              <div class="testimonial-card">
+                <img src="assets/img/testimonials/testimonials-2.jpeg" alt="Marc Dubois" class="rounded-circle" width="60" height="60">
+                <h5>Marc Dubois</h5>
+                <small>Assurance Habitation</small>
+                <p>“J’ai économisé 120€/an en quelques clics.”</p>
+              </div>
+    
+              <div class="testimonial-card">
+                <img src="assets/img/testimonials/testimonials-3.jpg" alt="Marc Dubois" class="rounded-circle" width="60" height="60">
+                <h5>Nadia Benomar</h5>
+                <small>Mutuelle Santé</small>
+                <p>“Service rapide et transparent!j'ai souscrit une mutuelle en moins de 10 minutes.”</p>
+              </div>
+      
+              <!-- Ajoute autant de témoignages que tu veux ici... -->
+              
+                <div class="testimonial-card">
+                    <img src="assets/img/testimonials/testimonials-4.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                    <div>
+                      <h5> Julien Moreau</h5>
+                      <small> Assurance Moto</small>
+                      <p>“J’ai trouvé une offre 20% moins chère pour mon assurance moto avec les mêmes garanties.” </p>
+                    </div>
+                  </div>
+    
+                  <div class="testimonial-card">
+                    <img src="assets/img/testimonials/testimonials-6.jpeg" alt="JEAN-MICHEL" class="rounded-circle me-3" width="60" height="60">
+                    <div>
+                      <h5> JEAN-MICHEL</h5>
+                      <small> Assurance RC PRO</small>
+                      <p>“En tant que PME,je suis couvert contre tous les risques de mon activité” </p>
+                    </div>
+                  </div>
+                  <div class="testimonial-card">
+                    <img src="assets/img/testimonials/testimonials-12.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                    <div>
+                      <h5> Chancelle Constante</h5>
+                      <small> Mutuelle Santé</small>
+                      <p> “Non seulement j’ai pu avoir la complementaire Santé selon mon budget avec toutes les garanties j'ai également l'assurance d'avoir toujours quelqu'un au bout du fil avec ce service client tellement professionnel.”</p>
+                    </div>
+                  </div>
+    
+                  <div class="testimonial-card">
+                    <img src="assets/img/testimonials/testimonials-5.jpeg" alt="Sophie Lambert" class="rounded-circle me-3" width="60" height="60">
+                    <div>
+                      <h5>Inès Rahmani</h5>
+                      <small> Auto Jeune conducteur</small>
+                      <p>“J'avais peur des prix en tant que jeune conducteur,mais Jemassur m'a trouvé une offre abordable.” </p>
+                    </div>
+                  </div>
+              </div>
+              
+          <!-- Double les cartes pour un effet continu -->
+           
+          <!-- Copier-coller les mêmes .testimonial-card pour éviter le vide à la fin -->
+  
+        </div>
       </div>
     </div>
   </section>
+ 
+  
+  
+
+    
+      
   
 
 

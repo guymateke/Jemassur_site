@@ -245,3 +245,5 @@
       banner.style.display = 'none';
     });
   });
+
+ 

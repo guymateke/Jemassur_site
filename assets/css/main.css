@@ -1698,3 +1698,42 @@ select.form-control option {
       width: 100%;
     }
   }
+  .logo-img {
+    
+width: 180px;
+height: 509px;
+}
+
+/* testimoni */
+
+.testimonial-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll-left 40s linear infinite;
+  width: max-content;
+}
+
+.testimonial-card {
+  min-width: 300px;
+  max-width: 300px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.testimonial-card img {
+  margin-bottom: 1rem;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
