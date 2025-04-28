@@ -8,7 +8,7 @@
     $couverture = $_POST['couverture'];
     $regime = $_POST['regime'];
 
-    $to = "ton-email@domaine.com"; // ← à personnaliser
+    $to = "contact@jemassur.com"; // ← à personnaliser
     $subject = "Nouvelle simulation Santé";
     $message = "
         Nouvelle demande de devis Santé :

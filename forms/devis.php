@@ -1,6 +1,6 @@
 <?php
 // Configuration
-$to = "ton-email@domaine.com"; // Remplace par ton adresse email
+$to = "contact@jemassur.com"; 
 $subject = "Nouvelle demande de devis assurance";
 
 // Récupération des données du formulaire
@@ -33,9 +33,10 @@ $headers .= "Reply-To: $email\r\n";
 
 // Envoi de l'email
 if (mail($to, $subject, $email_content, $headers)) {
-    echo "Votre demande de devis a bien été envoyée.";
+    http_response_code(200);
+    echo "OK"; // <<< ici aussi on renvoie juste "OK" !
 } else {
     http_response_code(500);
-    echo "Une erreur s'est produite, veuillez réessayer plus tard.";
+    echo "Erreur serveur. Veuillez réessayer plus tard.";
 }
 ?>

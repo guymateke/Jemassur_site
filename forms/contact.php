@@ -11,7 +11,7 @@ $message = $_POST['message'] ?? '';
 // Validation de base
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     http_response_code(400);
-    echo "Adresse email invalide.";
+    echo "Invalid email address.";
     exit;
 }
 
@@ -28,9 +28,11 @@ $headers .= "Reply-To: $email\r\n";
 
 // Envoi de l’email
 if (mail($to, $subject, $email_content, $headers)) {
-    echo "Votre message a bien été envoyé. Merci !";
+    http_response_code(200);
+    echo "OK"; // <<< Répond juste "OK"
 } else {
     http_response_code(500);
-    echo "Une erreur est survenue, veuillez réessayer plus tard.";
+    echo "Erreur serveur. Veuillez réessayer plus tard.";
 }
 ?>
+

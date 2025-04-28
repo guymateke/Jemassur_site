@@ -22,9 +22,10 @@ $headers .= "Reply-To: $email\r\n";
 
 // Envoi de l'email
 if (mail($to, $subject, $message, $headers)) {
-    echo "Votre abonnement a bien été pris en compte.";
+    http_response_code(200);
+    echo "OK"; // <<< ici aussi, on renvoie "OK"
 } else {
     http_response_code(500);
-    echo "Une erreur est survenue lors de l'envoi.";
+    echo "Erreur serveur. Veuillez réessayer.";
 }
 ?>

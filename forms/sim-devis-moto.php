@@ -8,7 +8,7 @@
     $anneeModele = $_POST['anneeModele'];
     $couverture = $_POST['couverture'];
 
-    $to = "ton-email@domaine.com"; // ← Remplace par ton adresse
+    $to = "contact@jemassur.com"; // ← Remplace par ton adresse
     $subject = "Nouvelle simulation assurance moto";
     $message = "
         Nouvelle demande de devis pour assurance moto :

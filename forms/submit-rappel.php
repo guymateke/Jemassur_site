@@ -14,14 +14,14 @@ $mail = new PHPMailer(true);
 
 try {
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com'; 
+    $mail->Host = 'mail.amassurancecourtage.com'; 
     $mail->SMTPAuth = true;
-    $mail->Username = 'tonemail@gmail.com';
-    $mail->Password = 'motdepasse';
+    $mail->Username = 'admin_essaid';
+    $mail->Password = 'FyWj4fO+y-3E@n';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
-    $mail->setFrom('tonemail@gmail.com', 'Formulaire Rappel');
+    $mail->setFrom('contact@jemassur.com', 'Formulaire Rappel');
     $mail->addAddress('destinataire@tonsite.com');
 
     $mail->isHTML(true);

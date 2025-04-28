@@ -9,7 +9,7 @@
     $employes = $_POST['employes'];
     $couverture = $_POST['couverture'];
 
-    $to = "ton-email@domaine.com"; // ← Remplace par ton adresse email
+    $to = "contact@jemassur.com"; // ← Remplace par ton adresse email
     $subject = "Nouvelle simulation RC Pro";
     $message = "
         Nouvelle demande de devis RC Pro :

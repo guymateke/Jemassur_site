@@ -1,6 +1,6 @@
 <?php
 // Paramètres de destination
-$to = "tonemail@domaine.com"; // 🔁 Remplace par ton adresse mail de réception
+$to = "contact@jemassur.com"; // 🔁 Remplace par ton adresse mail de réception
 $subject = "Nouvelle demande de devis depuis le site Jemassur";
 
 // Sécurisation des données
@@ -28,8 +28,6 @@ if (isset($_POST['typeLogement'])) {
     <p><strong>Couverture souhaitée :</strong> $couverture</p>
     ";
 }
-// Tu peux dupliquer cette logique pour auto-détecter les autres types (Décennale, Auto, etc.),
-// avec des `elseif` selon les champs spécifiques (ex: $_POST['typeActivite'], etc.)
 
 // Headers email HTML
 $headers = "MIME-Version: 1.0" . "\r\n";
