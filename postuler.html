@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Contact - Jemassur</title>
+  <title>Nous rejoindre  - Jemassur</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -71,87 +71,57 @@
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container">
-        <h1>Contact</h1>
+        <h1>Travaillons Ensemble</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Accueil</a></li>
-            <li class="current">Contact</li>
+            <li class="current">Nous rejoindre</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+   
+      
 
-      <div class="container" data-aos="fade">
+             <!-- Section Travaillons Ensemble -->
+<section id="engagement" class="section py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="mb-3">Travaillons Ensemble</h2>
+      <p class="lead">
+        Vous souhaitez rejoindre <strong>Jemassur</strong> ou proposer un partenariat ?<br>
+        Envoyez-nous votre candidature ou votre proposition.
+      </p>
+    </div>
 
-        <div class="row gy-5 gx-lg-5">
-
-          <div class="col-lg-4">
-
-            <div class="info">
-              <h3>Contactez-nous</h3>
-              <p>Nous mettons un point d'honneur à vous offrir un service réactif et personnalisé. Que ce soit pour une assurance auto, moto, santé, habitation ou pour une couverture professionnelle (VTC, taxi, RC Pro, décennale), nous sommes là pour vous guider.</p>
-
-              <div class="info-item d-flex">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h4>Location:</h4>
-                  <p>78 AVENUE DES CHAMPS ELYSEES BUREAU 326, 75008 PARIS France</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h4>Email:</h4>
-                  <p>contact@jemassur.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-phone flex-shrink-0"></i>
-                <div>
-                  <h4>Nous appeler</h4>
-                  <p>07 45 80 14 65</p>
-                </div>
-              </div><!-- End Info Item -->
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required="">
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" required="">
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" required="">
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Message" required=""></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Votre Message a été envoyé. Merci!</div>
-              </div>
-              <div class="text-center"><button type="submit">ENVOYEZ</button></div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
+    <form action="upload.php" method="post" enctype="multipart/form-data" class="mx-auto" style="max-width: 700px;">
+      <div class="mb-3">
+        <label for="nom" class="form-label">Nom complet</label>
+        <input type="text" class="form-control" id="nom" name="nom" required>
       </div>
 
-    </section><!-- /Contact Section -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Adresse email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Message ou idée de collaboration</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      </div>
+
+      <div class="mb-4">
+        <label for="cv" class="form-label">Joindre votre CV (PDF, DOC, max. 5 Mo)</label>
+        <input class="form-control" type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-lg">Envoyer ma candidature</button>
+      </div>
+    </form>
+  </div>
+</section>
 
   </main>
 
